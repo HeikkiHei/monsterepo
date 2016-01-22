@@ -1,10 +1,14 @@
-## Aihe: Monster generator
+## *Aihe:* Monster generator
 
-Toteutetaan ohjelma, joka satunnaisgeneroi hirviöitä ja NPC-hahmoja roolipeliä varten.
+*Lyhyt kuvaus:* Toteutetaan ohjelma, joka satunnaisgeneroi hirviöitä ja NPC-hahmoja roolipeliä varten. Tarkoituksena on ainakin aluksi kehittää järjestelmä, jolla pystytään luomaan satunnainen hahmo tai satunnaisia hahmoja, riippuen käyttäjän valinnasta.
 
-Ohjelma ei vaadi kirjautumista, joten käyttäjä on käyttäjä.
+Hahmoille generoidaan erilaisia ominaisuuksia, kuten hahmoluokka, mahdollinen nimi (NPC:t), statistiikka (voima, nopeus, jne), ase ja muut välineet.
 
-Toiminnot:
+
+
+*Käyttäjät:* Ohjelma ei vaadi kirjautumista, joten käyttäjä on käyttäjä.
+
+*Toiminnot:*
 - päätä tehdäänkö hirviö vai npc
 - päätä luodun hahmon taso
 - luo hahmo
