@@ -1,2 +1,0 @@
-# monsterepo
-Random monster generator
