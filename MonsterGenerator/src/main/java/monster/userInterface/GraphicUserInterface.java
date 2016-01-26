@@ -1,5 +1,5 @@
 
-package userInterface;
+package monster.userInterface;
 
 public class GraphicUserInterface {
     
