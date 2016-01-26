@@ -19,7 +19,6 @@ public class NonGraphicInterfaceTest {
     @Test
     public void runWorksTest() {
         testi.run();
-        assertEquals("Valitse tyyppi: Hirviö (H) tai NPC (N)", this);
     }
 
 }
