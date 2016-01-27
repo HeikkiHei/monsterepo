@@ -4,22 +4,27 @@ import java.util.*;
 
 public class NonGraphicInterface {
 
-    private Scanner reader = new Scanner(System.in);
+    private Scanner reader;
     private String inputType = "";
     private int inputInteger = 0;
 
-    public NonGraphicInterface() {
-    }
     
+    public NonGraphicInterface(Scanner reader) {
+        this.reader = reader;
+    }
+
     public void run() {
 
         inputType = chooseType(inputType, reader);
         inputInteger = chooseLevel(inputInteger, reader);
         String monsterType = inputTypeToMonsterType(inputType);
 
-        System.out.println("Päädyit hahmoon, jonka tyyppi on " + monsterType + " ja taso on " + inputInteger);
+        System.out.print("Päädyit hahmoon, jonka tyyppi on " + monsterType + " ja taso on " + inputInteger);
     }
 
+    
+    
+    
     private static String inputTypeToMonsterType(String inputType) {
         String monsterType;
         if (inputType.equalsIgnoreCase("h")) {
