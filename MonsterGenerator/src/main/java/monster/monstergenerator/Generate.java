@@ -1,3 +1,5 @@
+//MAIN -Heikki Hei
+
 package monster.monstergenerator;
 
 import java.util.Scanner;
