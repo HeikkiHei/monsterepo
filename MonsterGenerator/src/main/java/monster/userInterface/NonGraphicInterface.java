@@ -9,11 +9,11 @@ public class NonGraphicInterface {
     private String inputType = "";
     private int inputInteger = 0;
     
-    public monster.logic.logic logic;
+    public monster.logic.Logic logic;
 
     public NonGraphicInterface(Scanner reader) {
         this.reader = reader;
-        this.logic = new monster.logic.logic(reader);
+        this.logic = new monster.logic.Logic(reader);
     }
 
     public void run() {

@@ -17,8 +17,9 @@ public class Creature {
     public Creature() {
     }
 
-    public Creature(String name) {
+    public Creature(String name, String creatureClass) {
         this.name = name;
+        this.creatureClass = creatureClass;
     }
 
 //<editor-fold defaultstate="collapsed" desc="Getters and Setters">

@@ -13,7 +13,6 @@ public class NonGraphicInterfaceTest {
 
     public NonGraphicInterfaceTest() {
     }
-
     NonGraphicInterface testableInterface;
 
     @Before
