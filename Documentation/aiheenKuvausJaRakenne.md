@@ -14,6 +14,6 @@ Hahmoille generoidaan erilaisia ominaisuuksia, kuten hahmoluokka, mahdollinen ni
 - luo hahmo
 
 **Luokkakaavio:**
-![Kaavion paikka](Monster_luokkakaavio.png "Luokkakaavio")
+![Kaavion paikka](Monster_luokkakaavio.png "http://yuml.me/edit/f76c0700")
 
 
