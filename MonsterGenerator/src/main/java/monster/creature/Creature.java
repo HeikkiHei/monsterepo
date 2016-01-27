@@ -101,15 +101,16 @@ public class Creature {
         return this.name + " " + this.creatureClass;
     }
 
-    public ArrayList<Integer> Stats() {
-        ArrayList<Integer> Stats = new ArrayList<>();
-        Stats.add(this.Str);
-        Stats.add(this.Dex);
-        Stats.add(this.Con);
-        Stats.add(this.Int);
-        Stats.add(this.Wis);
-        Stats.add(this.Cha);
-        return Stats;
-    }
+//    public ArrayList<Integer> createStats() {
+//        ArrayList<Integer> Stats = new ArrayList<>();
+//        Stats.add(this.Str);
+//        Stats.add(this.Dex);
+//        Stats.add(this.Con);
+//        Stats.add(this.Int);
+//        Stats.add(this.Wis);
+//        Stats.add(this.Cha);
+//        return Stats;
+//    }
+// Onko tarpeellinen? Pidetään tallessa varmuuden vuoksi -Heikki Hei
 
 }

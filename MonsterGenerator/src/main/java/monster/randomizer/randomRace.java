@@ -1,6 +1,6 @@
 
 package monster.randomizer;
 
-public class randomRace {
+public class RandomRace {
     
 }

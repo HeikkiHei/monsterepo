@@ -10,7 +10,7 @@ public class Generate {
     Scanner reader;
 
     public static void main(String[] args) {
-        NonGraphicInterface monster = new NonGraphicInterface(new Scanner(System.in));
+        Interface monster = new Interface(new Scanner(System.in));
         monster.run();
     }
 }

@@ -3,17 +3,17 @@ package monster.userInterface;
 import java.util.*;
 import monster.logic.*;
 
-public class NonGraphicInterface {
+public class Interface {
 
     private Scanner reader;
     private String inputType = "";
     private int inputInteger = 0;
     
-    public monster.logic.Logic logic;
+    public monster.logic.SystemLogic logic;
 
-    public NonGraphicInterface(Scanner reader) {
+    public Interface(Scanner reader) {
         this.reader = reader;
-        this.logic = new monster.logic.Logic(reader);
+        this.logic = new monster.logic.SystemLogic(reader);
     }
 
     public void run() {

@@ -3,6 +3,6 @@
 package monster.randomizer;
 
 
-public class randomName {
+public class RandomName {
     
 }

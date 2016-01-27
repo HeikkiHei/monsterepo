@@ -7,13 +7,13 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class NonGraphicInterfaceTest {
+public class InterfaceTest {
 
     ByteArrayOutputStream inputStream;
 
-    public NonGraphicInterfaceTest() {
+    public InterfaceTest() {
     }
-    NonGraphicInterface testableInterface;
+    Interface testableInterface;
 
     @Before
     public void setUp() {
@@ -24,7 +24,7 @@ public class NonGraphicInterfaceTest {
     @Test
     public void runWorks() {
         String input = createTestLine("n", "10");
-        testableInterface = new NonGraphicInterface(new Scanner(input));
+        testableInterface = new Interface(new Scanner(input));
         testableInterface.run();
 
         String compare = lastOutputLineForGuiTest();

@@ -2,32 +2,18 @@ package monster.logic;
 
 import java.util.*;
 
-public class logic {
+public class SystemLogic {
 
     private Scanner reader;
-    private String inputType = "";
-    private int inputInteger = 0;
 
-    public logic(Scanner reader) {
+    public SystemLogic(Scanner reader) {
         this.reader = reader;
-    }
-
-    public static String inputTypeToMonsterType(String inputType) {
-        String monsterType;
-        if (inputType.equalsIgnoreCase("h")) {
-            return monsterType = "hirviö";
-        }
-        if (inputType.equalsIgnoreCase("n")) {
-            return monsterType = "NPC";
-        } else {
-            return monsterType = "tuntematon";
-        }
     }
 
     public static int chooseLevel(int inputInteger, Scanner reader) {
         while (true) {
-            System.out.println("Valitse taso: 1-10");
             try {
+                System.out.println("Valitse taso: 1-10");
                 inputInteger = Integer.parseInt(reader.nextLine());
             } catch (Exception e) {
                 System.out.println("Et antanut oikeaa syötettä. Anna kokonaisluku väliltä 1-10");
@@ -42,8 +28,8 @@ public class logic {
 
     public static String chooseType(String inputType, Scanner reader) {
         while (true) {
-            System.out.println("Valitse tyyppi: Hirviö (H) tai NPC (N)");
             try {
+                System.out.println("Valitse tyyppi: Hirviö (H) tai NPC (N)");
                 inputType = reader.nextLine();
             } catch (Exception e) {
                 System.out.println("Et antanut oikeaa syötettä. Kirjoita H tai N");
@@ -59,4 +45,19 @@ public class logic {
         return inputType;
     }
 
+    public static String inputTypeToMonsterType(String inputType) {
+        try {
+            String monsterType;
+            if (inputType.equalsIgnoreCase("h")) {
+                return monsterType = "hirviö";
+            }
+            if (inputType.equalsIgnoreCase("n")) {
+                return monsterType = "NPC";
+            } else {
+                return monsterType = "tuntematon";
+            }
+        } catch (Exception e) {
+        }
+        return "tuntematon";
+    }
 }
