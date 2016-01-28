@@ -4,10 +4,7 @@ import java.util.*;
 
 public class SystemLogic {
 
-    private Scanner reader;
-
-    public SystemLogic(Scanner reader) {
-        this.reader = reader;
+    public SystemLogic() {
     }
 
     public static int chooseLevel(Scanner reader) {

@@ -4,7 +4,7 @@ package monster.monstergenerator;
 import java.util.Scanner;
 import monster.userInterface.*;
 
-public class Generate {
+public class Main {
 
     public static void main(String[] args) {
 

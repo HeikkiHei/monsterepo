@@ -13,7 +13,7 @@ public class TextInterface {
 
     public TextInterface(Scanner reader) {
         this.reader = reader;
-        this.logic = new monster.logic.SystemLogic(reader);
+        this.logic = new monster.logic.SystemLogic();
     }
 
     public void run() {
