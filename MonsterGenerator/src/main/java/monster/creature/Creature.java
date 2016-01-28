@@ -14,83 +14,99 @@ public class Creature {
     private int Wis;
     private int Cha;
 
-    public Creature() {
-    }
-
     public Creature(String name, String creatureClass) {
         this.name = name;
         this.creatureClass = creatureClass;
+        this.weapon = "none";
     }
 
 //<editor-fold defaultstate="collapsed" desc="Getters and Setters">
     public void setStr(int Str) {
-        this.Str = Str;
+        if (Str >= 1 && Str <= 10) {
+            this.Str = Str;
+        }
     }
-    
+
     public int getStr() {
         return Str;
     }
-    
+
     public void setDex(int Dex) {
-        this.Dex = Dex;
+        if (Dex >= 1 && Dex <= 10) {
+            this.Dex = Dex;
+        }
     }
-    
+
     public int getDex() {
         return Dex;
     }
-    
+
     public void setCon(int Con) {
-        this.Con = Con;
+        if (Con >= 1 && Con <= 10) {
+            this.Con = Con;
+        }
     }
-    
+
     public int getCon() {
         return Con;
     }
-    
+
     public void setInt(int Int) {
-        this.Int = Int;
+        if (Int >= 1 && Int <= 10) {
+            this.Int = Int;
+        }
     }
-    
+
     public int getInt() {
         return Int;
     }
-    
+
     public void setWis(int Wis) {
-        this.Wis = Wis;
+        if (Wis >= 1 && Wis <= 10) {
+            this.Wis = Wis;
+        }
     }
-    
+
     public int getWis() {
         return Wis;
     }
-    
+
     public void setCha(int Cha) {
-        this.Cha = Cha;
+        if (Cha >= 1 && Cha <= 10) {
+            this.Cha = Cha;
+        }
     }
-    
+
     public int getCha() {
         return Cha;
     }
-    
+
     public void setCreatureClass(String creatureClass) {
-        this.creatureClass = creatureClass;
+        if (creatureClass != null) {
+            this.creatureClass = creatureClass;
+        }
     }
-    
+
     public String getCreatureClass() {
         return creatureClass;
     }
-    
+
     public void setName(String name) {
-        this.name = name;
+        if (name != null) {
+            this.name = name;
+        }
     }
-    
+
     public String getName() {
         return name;
     }
-    
+
     public void setWeapon(String weapon) {
-        this.weapon = weapon;
+        if (weapon != null) {
+            this.weapon = weapon;
+        }
     }
-    
+
     public String getWeapon() {
         return weapon;
     }
@@ -100,17 +116,5 @@ public class Creature {
     public String toString() {
         return this.name + " " + this.creatureClass;
     }
-
-//    public ArrayList<Integer> createStats() {
-//        ArrayList<Integer> Stats = new ArrayList<>();
-//        Stats.add(this.Str);
-//        Stats.add(this.Dex);
-//        Stats.add(this.Con);
-//        Stats.add(this.Int);
-//        Stats.add(this.Wis);
-//        Stats.add(this.Cha);
-//        return Stats;
-//    }
-// Onko tarpeellinen? Pidetään tallessa varmuuden vuoksi -Heikki Hei
 
 }

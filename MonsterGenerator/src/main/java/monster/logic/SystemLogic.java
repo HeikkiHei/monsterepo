@@ -10,13 +10,14 @@ public class SystemLogic {
         this.reader = reader;
     }
 
-    public static int chooseLevel(int inputInteger, Scanner reader) {
+    public static int chooseLevel(Scanner reader) {
+        System.out.println("Valitse taso: 1-10");
+        int inputInteger = 0;
         while (true) {
             try {
-                System.out.println("Valitse taso: 1-10");
                 inputInteger = Integer.parseInt(reader.nextLine());
             } catch (Exception e) {
-                System.out.println("Et antanut oikeaa syötettä. Anna kokonaisluku väliltä 1-10");
+                System.out.println("Et antanut oikeaa syÃ¶tettÃ¤. Anna kokonaisluku vÃ¤liltÃ¤ 1-10");
             }
             if (inputInteger <= 10 && inputInteger >= 1) {
                 System.out.println("Valitsit tason " + inputInteger);
@@ -26,16 +27,18 @@ public class SystemLogic {
         return inputInteger;
     }
 
-    public static String chooseType(String inputType, Scanner reader) {
+    public static String chooseType(Scanner reader) {
+        String inputType = "";
+        System.out.println("Valitse tyyppi: HirviÃ¶ (H) tai NPC (N)");
         while (true) {
             try {
-                System.out.println("Valitse tyyppi: Hirviö (H) tai NPC (N)");
+                System.out.println("Valitse tyyppi: HirviÃ¶ (H) tai NPC (N)");
                 inputType = reader.nextLine();
             } catch (Exception e) {
-                System.out.println("Et antanut oikeaa syötettä. Kirjoita H tai N");
+                System.out.println("Et antanut oikeaa syÃ¶tettÃ¤. Kirjoita H tai N");
             }
             if (inputType.equalsIgnoreCase("H")) {
-                System.out.println("Valitsit hirviön");
+                System.out.println("Valitsit hirviÃ¶n");
                 break;
             } else if (inputType.equalsIgnoreCase("N")) {
                 System.out.println("Valitsit NPC:n");
@@ -49,7 +52,7 @@ public class SystemLogic {
         try {
             String monsterType;
             if (inputType.equalsIgnoreCase("h")) {
-                return monsterType = "hirviö";
+                return monsterType = "hirviÃ¶";
             }
             if (inputType.equalsIgnoreCase("n")) {
                 return monsterType = "NPC";

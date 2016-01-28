@@ -1,32 +1,30 @@
-
 package monster.logic;
 
-import org.junit.After;
-import org.junit.AfterClass;
+import java.util.Scanner;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class SystemLogicTest {
+
+    public SystemLogic testable;
     
     public SystemLogicTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
+    @Test
+    public void chooseLevelWorks() {
+        String input = "10";
+        int output = testable.chooseLevel(new Scanner(input));
+        assertEquals(10, output);
     }
     
-    @AfterClass
-    public static void tearDownClass() {
+    @Test
+    public void chooseTypeWorks() {
+        String input = "N";
+        String output = testable.chooseType(new Scanner(input));
+        assertEquals("N", output);
     }
     
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-    
+
 }

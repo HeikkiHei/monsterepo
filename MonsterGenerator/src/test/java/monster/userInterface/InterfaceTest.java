@@ -10,10 +10,10 @@ import static org.junit.Assert.*;
 public class InterfaceTest {
 
     ByteArrayOutputStream inputStream;
+    TextInterface testableInterface;
 
     public InterfaceTest() {
     }
-    Interface testableInterface;
 
     @Before
     public void setUp() {
@@ -24,7 +24,7 @@ public class InterfaceTest {
     @Test
     public void runWorks() {
         String input = createTestLine("n", "10");
-        testableInterface = new Interface(new Scanner(input));
+        testableInterface = new TextInterface(new Scanner(input));
         testableInterface.run();
 
         String compare = lastOutputLineForGuiTest();
@@ -33,7 +33,7 @@ public class InterfaceTest {
 
     private String lastOutputLineForGuiTest() {
         String[] output = inputStream.toString().split("\n");
-        String lastLine = output[output.length -1];
+        String lastLine = output[output.length - 1];
         return lastLine;
     }
 
