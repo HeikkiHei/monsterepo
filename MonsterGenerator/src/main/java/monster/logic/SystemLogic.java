@@ -48,7 +48,7 @@ public class SystemLogic {
         try {
             String monsterType;
             if (inputType.equalsIgnoreCase("h")) {
-                return monsterType = "hirviÃ¶";
+                return monsterType = "Monsu";
             }
             if (inputType.equalsIgnoreCase("n")) {
                 return monsterType = "NPC";

@@ -88,7 +88,7 @@ public class CreatureTest {
     }
 
     @Test
-    public void settersAndGettersNullWork() {
+    public void settersAndGettersStringNullWork() {
         creature.setName(null);
         assertEquals("otus", creature.getName());
         creature.setCreatureClass(null);

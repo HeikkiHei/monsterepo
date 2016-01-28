@@ -7,12 +7,12 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class InterfaceTest {
+public class TextInterfaceTest {
 
     ByteArrayOutputStream inputStream;
     TextInterface testableInterface;
 
-    public InterfaceTest() {
+    public TextInterfaceTest() {
     }
 
     @Before
