@@ -42,21 +42,21 @@ public class SystemLogicTest {
         String output = testable.inputTypeToMonsterType(input);
         assertEquals("NPC", output);
     }
-    
+
     @Test
     public void inputTypeToMonsterTypeMonsterWorks() {
         String input = "H";
         String output = testable.inputTypeToMonsterType(input);
         assertEquals("Monsu", output);
     }
-    
+
     @Test
     public void inputTypeToMonsterTypeIllegalWorks() {
         String input = "G";
         String output = testable.inputTypeToMonsterType(input);
         assertEquals("tuntematon", output);
     }
-    
+
     @Test
     public void inputTypeToMonsterTypeNullWorks() {
         String input = null;
@@ -64,4 +64,6 @@ public class SystemLogicTest {
         assertEquals("tuntematon", output);
     }
 //</editor-fold>
+
+    // En ehtinyt tehdä try-catch enkä fail-testejä, jää ensi viikkoon. -Heikki Hei
 }
