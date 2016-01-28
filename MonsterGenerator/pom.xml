@@ -36,10 +36,20 @@
                 <version>1.1.8</version>
                 <configuration>
                     <targetClasses>
-                        <param>monster.*</param>
+                        <param>monster.creature</param>
+                        <param>monster.generateStats</param>
+                        <param>monster.levelpack</param>
+                        <param>monster.logic</param>
+                        <param>monster.randomizer</param>
+                        <param>monster.userInterface</param>
                     </targetClasses>
                     <targetTests>
-                        <param>monster.*</param>
+                        <param>monster.creature</param>
+                        <param>monster.generateStats</param>
+                        <param>monster.levelpack</param>
+                        <param>monster.logic</param>
+                        <param>monster.randomizer</param>
+                        <param>monster.userInterface</param>
                     </targetTests>
                 </configuration>
             </plugin>
