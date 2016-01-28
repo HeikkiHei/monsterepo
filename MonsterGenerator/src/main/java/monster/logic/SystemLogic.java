@@ -10,9 +10,10 @@ public class SystemLogic {
     public static int chooseLevel(Scanner reader) {
 
         int inputInteger = 0;
+
         while (true) {
+            System.out.println("Valitse taso: 1-10");
             try {
-                System.out.println("Valitse taso: 1-10");
                 inputInteger = Integer.parseInt(reader.nextLine());
             } catch (Exception e) {
             }
@@ -27,8 +28,8 @@ public class SystemLogic {
     public static String chooseType(Scanner reader) {
         String inputType = "";
         while (true) {
+            System.out.println("Valitse tyyppi: Hirviö (H) tai NPC (N)");
             try {
-                System.out.println("Valitse tyyppi: Hirviö (H) tai NPC (N)");
                 inputType = reader.nextLine();
             } catch (Exception e) {
             }
@@ -59,4 +60,6 @@ public class SystemLogic {
         }
         return "tuntematon";
     }
+    
+    // En ehtinyt opetella ja tehdä try-catch -testereitä, jää ensi viikkoon. -Heikki Hei
 }

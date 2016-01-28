@@ -15,11 +15,11 @@ public class CreatureTest {
     public void setUp() {
         creature = new Creature("otus", "örkki");
         creature.setStr(1);
-        creature.setDex(2);
-        creature.setCon(3);
-        creature.setInt(4);
-        creature.setWis(5);
-        creature.setCha(6);
+        creature.setDex(1);
+        creature.setCon(1);
+        creature.setInt(1);
+        creature.setWis(1);
+        creature.setCha(1);
     }
 
     @Test
@@ -60,15 +60,15 @@ public class CreatureTest {
         creature.setStr(-10);
         assertEquals(1, creature.getStr());
         creature.setDex(-10);
-        assertEquals(2, creature.getDex());
+        assertEquals(1, creature.getDex());
         creature.setCon(-10);
-        assertEquals(3, creature.getCon());
+        assertEquals(1, creature.getCon());
         creature.setInt(-10);
-        assertEquals(4, creature.getInt());
+        assertEquals(1, creature.getInt());
         creature.setWis(-10);
-        assertEquals(5, creature.getWis());
+        assertEquals(1, creature.getWis());
         creature.setCha(-10);
-        assertEquals(6, creature.getCha());
+        assertEquals(1, creature.getCha());
     }
 
     @Test
@@ -76,15 +76,15 @@ public class CreatureTest {
         creature.setStr(11);
         assertEquals(1, creature.getStr());
         creature.setDex(12);
-        assertEquals(2, creature.getDex());
+        assertEquals(1, creature.getDex());
         creature.setCon(13);
-        assertEquals(3, creature.getCon());
+        assertEquals(1, creature.getCon());
         creature.setInt(100029);
-        assertEquals(4, creature.getInt());
+        assertEquals(1, creature.getInt());
         creature.setWis(34);
-        assertEquals(5, creature.getWis());
+        assertEquals(1, creature.getWis());
         creature.setCha(11);
-        assertEquals(6, creature.getCha());
+        assertEquals(1, creature.getCha());
     }
 
     @Test
