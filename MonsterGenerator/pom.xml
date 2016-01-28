@@ -44,12 +44,7 @@
                         <param>monster.userInterface</param>
                     </targetClasses>
                     <targetTests>
-                        <param>monster.creature</param>
-                        <param>monster.generateStats</param>
-                        <param>monster.levelpack</param>
-                        <param>monster.logic</param>
-                        <param>monster.randomizer</param>
-                        <param>monster.userInterface</param>
+                        <param>monster.*</param>
                     </targetTests>
                 </configuration>
             </plugin>
