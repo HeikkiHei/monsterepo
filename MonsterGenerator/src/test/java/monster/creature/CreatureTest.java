@@ -13,7 +13,7 @@ public class CreatureTest {
 
     @Before
     public void setUp() {
-        creature = new Creature("otus", "örkki");
+        creature = new Creature("otus", "paladin", "örkki");
         creature.setStr(1);
         creature.setDex(1);
         creature.setCon(1);
@@ -25,12 +25,13 @@ public class CreatureTest {
     @Test
     public void constructorWorks() {
         assertEquals("otus", creature.getName());
-        assertEquals("örkki", creature.getCreatureClass());
+        assertEquals("paladin", creature.getCreatureClass());
+        assertEquals("örkki", creature.getRace());
     }
 
     @Test
     public void toStringWorks() {
-        assertEquals("otus örkki", creature.toString());
+        assertEquals("otus paladin örkki", creature.toString());
     }
 
     @Test
@@ -49,8 +50,10 @@ public class CreatureTest {
         assertEquals(10, creature.getCha());
         creature.setName("name");
         assertEquals("name", creature.getName());
-        creature.setCreatureClass("orc");
-        assertEquals("orc", creature.getCreatureClass());
+        creature.setCreatureClass("warrior");
+        assertEquals("warrior", creature.getCreatureClass());
+        creature.setRace("orc");
+        assertEquals("orc", creature.getRace());
         creature.setWeapon("weapon");
         assertEquals("weapon", creature.getWeapon());
     }
@@ -92,7 +95,9 @@ public class CreatureTest {
         creature.setName(null);
         assertEquals("otus", creature.getName());
         creature.setCreatureClass(null);
-        assertEquals("örkki", creature.getCreatureClass());
+        assertEquals("paladin", creature.getCreatureClass());
+        creature.setRace(null);
+        assertEquals("örkki", creature.getRace());
         creature.setWeapon(null);
         assertEquals("none", creature.getWeapon());
     }

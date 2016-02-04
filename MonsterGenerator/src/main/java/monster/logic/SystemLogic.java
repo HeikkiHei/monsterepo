@@ -17,9 +17,10 @@ public class SystemLogic {
                 inputInteger = Integer.parseInt(reader.nextLine());
             } catch (Exception e) {
             }
-            if (inputInteger <= 10 && inputInteger >= 1) {
-                System.out.println("Valitsit tason " + inputInteger);
-                break;
+            if (inputInteger < 11) {
+                if (inputInteger > 0) { // Jaettu kahtia saadakseni selvyyttä PITiin - Heikki Hei
+                    break;
+                }
             }
         }
         return inputInteger;
@@ -29,16 +30,11 @@ public class SystemLogic {
         String inputType = "";
         while (true) {
             System.out.println("Valitse tyyppi: Hirviö (H) tai NPC (N)");
-            try {
-                inputType = reader.nextLine();
-            } catch (Exception e) {
-            }
+            inputType = reader.nextLine();
             if (inputType.equalsIgnoreCase("H")) {
-                System.out.println("Valitsit hirviön");
                 break;
             }
             if (inputType.equalsIgnoreCase("N")) {
-                System.out.println("Valitsit NPC:n");
                 break;
             }
         }
@@ -60,6 +56,6 @@ public class SystemLogic {
         }
         return "tuntematon";
     }
-    
+
     // En ehtinyt opetella ja tehdä try-catch -testereitä, jää ensi viikkoon. -Heikki Hei
 }

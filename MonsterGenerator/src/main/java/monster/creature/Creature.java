@@ -6,6 +6,7 @@ public class Creature {
 
     private String name;
     private String creatureClass;
+    private String race;
     private String weapon; // may be changed to class -HH
     private int Str;
     private int Dex;
@@ -14,9 +15,10 @@ public class Creature {
     private int Wis;
     private int Cha;
 
-    public Creature(String name, String creatureClass) {
+    public Creature(String name, String creatureClass, String race) {
         this.name = name;
         this.creatureClass = creatureClass;
+        this.race = race;
         this.weapon = "none";
     }
 
@@ -107,6 +109,16 @@ public class Creature {
         }
     }
 
+    public void setRace(String race) {
+        if (race != null) {
+            this.race = race;
+        }
+    }
+
+    public String getRace() {
+        return race;
+    }
+
     public String getWeapon() {
         return weapon;
     }
@@ -114,7 +126,7 @@ public class Creature {
 
     @Override
     public String toString() {
-        return this.name + " " + this.creatureClass;
+        return this.name + " " + this.creatureClass + " " + this.race;
     }
 
 }
