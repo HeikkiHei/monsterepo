@@ -20,9 +20,19 @@
         </dependency>
     </dependencies>
 
+ <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>cobertura-maven-plugin</artifactId>
+        <version>2.7</version>
+      </plugin>
+    </plugins>
+  </reporting>
+
     <build>
         <plugins>
-            <plugin>
+          <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>1.8</source>
@@ -48,8 +58,20 @@
                     </targetTests>
                 </configuration>
             </plugin>
-
-        </plugins>
+	    <plugin>
+	      <groupId>org.apache.maven.plugins</groupId>
+	      <artifactId>maven-checkstyle-plugin</artifactId>
+	      <version>2.13</version>
+	      <configuration>
+	        <configLocation>checkstyle.xml</configLocation>
+	      </configuration>
+	    </plugin>
+	    <plugin>
+	      <groupId>org.apache.maven.plugins</groupId>
+	      <artifactId>maven-jxr-plugin</artifactId>
+	      <version>2.4</version>
+	    </plugin>
+	  </plugins>
     </build>
     
 </project>
