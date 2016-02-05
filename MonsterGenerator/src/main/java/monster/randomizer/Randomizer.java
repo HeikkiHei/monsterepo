@@ -11,25 +11,24 @@ public class Randomizer {
     public Randomizer() {
     }
 
-    public String readFileIntoString(File inputFile) throws Exception {
+    public String getRandomLineFromInputFile(File inputFile) throws Exception {
         Random random = new Random();
-        Scanner reader = changeFileIntoArrayList(inputFile);
-        reader.close();
+        changeFileIntoStrings(inputFile);
 
         int getOneRandom = random.nextInt(FileList.size());
-        String randomized = FileList.get(getOneRandom);   
+        String randomized = FileList.get(getOneRandom);
         return randomized;
     }
 
-    private Scanner changeFileIntoArrayList(File inputFile) throws FileNotFoundException {
+
+    //Testit puuttuu - Heikki Hei
+
+    private void changeFileIntoStrings(File inputFile) throws FileNotFoundException {
         Scanner reader = new Scanner(inputFile);
         while (reader.hasNextLine()) {
             String InputForOneInstance = reader.nextLine();
             FileList.add(InputForOneInstance);
         }
-        return reader;
+        reader.close();
     }
-    
-    //Testit puuttuu - Heikki Hei
-
 }

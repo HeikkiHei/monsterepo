@@ -8,7 +8,7 @@ public class RandomClass {
         public RandomClass() throws Exception {
         File inputFile = new File("src\\main\\java\\monster\\datafiles\\classes.csv");
         Randomizer randomizer = new Randomizer();
-        randomizer.readFileIntoString(inputFile);
+        randomizer.getRandomLineFromInputFile(inputFile);
     }
 
     

@@ -9,11 +9,11 @@ import monster.randomizer.*;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        RandomRace randomr = new RandomRace();
-        RandomClass randomc = new RandomClass();
-        RandomName randomn = new RandomName();
-        RandomWeapon randomw = new RandomWeapon();
-        
+//        RandomRace randomr = new RandomRace();
+//        RandomClass randomc = new RandomClass();
+//        RandomName randomn = new RandomName();
+//        RandomWeapon randomw = new RandomWeapon();
+//          Näitä käytettiin randomizerin testaamiseen, testit vielä tekemättä. -Heikki Hei
         
 //        Scanner reader = nering readFileIntoString = rw Scanner(System.in);
 //        TextInterface monster = new TextInterface(reader);

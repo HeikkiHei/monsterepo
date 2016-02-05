@@ -7,7 +7,7 @@ public class RandomWeapon {
     public RandomWeapon() throws Exception {
         File inputFile = new File("src\\main\\java\\monster\\datafiles\\weapons.csv");
         Randomizer randomizer = new Randomizer();
-        randomizer.readFileIntoString(inputFile);
+        randomizer.getRandomLineFromInputFile(inputFile);
     }
 
 }
