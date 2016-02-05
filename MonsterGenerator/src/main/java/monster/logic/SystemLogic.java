@@ -6,7 +6,7 @@ import monster.levelpack.*;
 public class SystemLogic {
 
     public monster.levelpack.DetermineLevel determineLevel;
-    private int testi = 0;
+    private int level = 0;
     private Scanner reader;
 
     public SystemLogic() {
@@ -15,26 +15,9 @@ public class SystemLogic {
     }
 
     public int chooseLevel(Scanner reader) {
-        return this.testi = determineLevel.chooseLevel(reader);
+        return this.level = determineLevel.chooseLevel(reader);
     }
-
-//    public static int chooseLevel(Scanner reader) {
-//        int inputInteger = 0;
-//
-//        while (true) {
-//            System.out.println("Valitse taso: 1-10");
-//            try {
-//                inputInteger = Integer.parseInt(reader.nextLine());
-//            } catch (Exception e) {
-//            }
-//            if (inputInteger < 11) {
-//                if (inputInteger > 0) { // Jaettu kahtia saadakseni selvyyttä PITiin - Heikki Hei
-//                    break;
-//                }
-//            }
-//        }
-//        return inputInteger;
-//    }
+// Vähän hassu rakenne vielä, kun eriytin tästä levelin päättämisen jo muualle - Heikki Hei
 
     public static String chooseType(Scanner reader) {
         String inputType = "";

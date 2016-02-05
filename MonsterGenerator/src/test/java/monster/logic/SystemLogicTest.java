@@ -22,15 +22,6 @@ public class SystemLogicTest {
     }
 
     @Test
-    public void chooseLevelWorks() {
-        String input = "8";
-
-        Scanner reader = new Scanner(input);
-        int output = testableLogic.chooseLevel(reader);
-        assertEquals(8, output);
-    }
-
-    @Test
     public void chooseTypeWorksNPC() {
         String input = "N";
 
