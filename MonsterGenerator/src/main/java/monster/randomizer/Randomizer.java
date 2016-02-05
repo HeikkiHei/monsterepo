@@ -13,15 +13,11 @@ public class Randomizer {
 
     public String getRandomLineFromInputFile(File inputFile) throws Exception {
         Random random = new Random();
+        
         changeFileIntoStrings(inputFile);
-
-        int getOneRandom = random.nextInt(FileList.size());
-        String randomized = FileList.get(getOneRandom);
-        return randomized;
+        
+        return FileList.get(random.nextInt(FileList.size()));
     }
-
-
-    //Testit puuttuu - Heikki Hei
 
     private void changeFileIntoStrings(File inputFile) throws FileNotFoundException {
         Scanner reader = new Scanner(inputFile);
@@ -31,4 +27,7 @@ public class Randomizer {
         }
         reader.close();
     }
+    
+    //Testit puuttuu - Heikki Hei
+
 }
