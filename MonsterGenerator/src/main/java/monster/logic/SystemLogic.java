@@ -1,30 +1,40 @@
 package monster.logic;
 
 import java.util.*;
+import monster.levelpack.*;
 
 public class SystemLogic {
 
+    public monster.levelpack.DetermineLevel determineLevel;
+    private int testi = 0;
+    private Scanner reader;
+
     public SystemLogic() {
+        this.determineLevel = new DetermineLevel();
+
     }
 
-    public static int chooseLevel(Scanner reader) {
-
-        int inputInteger = 0;
-
-        while (true) {
-            System.out.println("Valitse taso: 1-10");
-            try {
-                inputInteger = Integer.parseInt(reader.nextLine());
-            } catch (Exception e) {
-            }
-            if (inputInteger < 11) {
-                if (inputInteger > 0) { // Jaettu kahtia saadakseni selvyyttä PITiin - Heikki Hei
-                    break;
-                }
-            }
-        }
-        return inputInteger;
+    public int chooseLevel(Scanner reader) {
+        return this.testi = determineLevel.chooseLevel(reader);
     }
+
+//    public static int chooseLevel(Scanner reader) {
+//        int inputInteger = 0;
+//
+//        while (true) {
+//            System.out.println("Valitse taso: 1-10");
+//            try {
+//                inputInteger = Integer.parseInt(reader.nextLine());
+//            } catch (Exception e) {
+//            }
+//            if (inputInteger < 11) {
+//                if (inputInteger > 0) { // Jaettu kahtia saadakseni selvyyttä PITiin - Heikki Hei
+//                    break;
+//                }
+//            }
+//        }
+//        return inputInteger;
+//    }
 
     public static String chooseType(Scanner reader) {
         String inputType = "";

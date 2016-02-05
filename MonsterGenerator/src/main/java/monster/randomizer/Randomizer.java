@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Randomizer {
 
-    ArrayList<String> FileList = new ArrayList<String>();
+    ArrayList<String> FileList = new ArrayList<>();
 
     public Randomizer() {
     }
@@ -20,12 +20,12 @@ public class Randomizer {
     }
 
     private void changeFileIntoStrings(File inputFile) throws FileNotFoundException {
-        Scanner reader = new Scanner(inputFile);
-        while (reader.hasNextLine()) {
-            String InputForOneInstance = reader.nextLine();
-            FileList.add(InputForOneInstance);
+        try (Scanner reader = new Scanner(inputFile)) {
+            while (reader.hasNextLine()) {
+                String InputForOneInstance = reader.nextLine();
+                FileList.add(InputForOneInstance);
+            }
         }
-        reader.close();
     }
     
     //Testit puuttuu - Heikki Hei
