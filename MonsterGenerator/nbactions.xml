@@ -7,6 +7,7 @@
             <goal>org.pitest:pitest-maven:mutationCoverage</goal>
         </goals>
     </action>
+
     <action>
             <actionName>run</actionName>
             <packagings>
@@ -21,6 +22,7 @@
                 <exec.executable>java</exec.executable>
             </properties>
         </action>
+
     <action>
             <actionName>debug</actionName>
             <packagings>
@@ -36,6 +38,7 @@
                 <jpda.listen>true</jpda.listen>
             </properties>
         </action>
+
     <action>
             <actionName>profile</actionName>
             <packagings>
@@ -50,6 +53,7 @@
                 <exec.executable>java</exec.executable>
             </properties>
 	</action>
+
 	  <action>
 	    <actionName>CUSTOM-checkstyle</actionName>
 	    <displayName>Checkstyle</displayName>
@@ -58,4 +62,5 @@
 	      <goal>checkstyle:checkstyle</goal>
 	    </goals>
 	  </action>
+
 </actions>

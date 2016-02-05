@@ -1,4 +1,3 @@
-Weapon;Cost;Min Damage;Max Damage;DamageType;Weight;Properties
 Abola;4000;1;8;lightning;5.0;Finesse
 Amputation Knife;1500;1;6;slashing;3.0;Light &  Finesse
 Anchor;6500;2;12;bludgeoning;50.0;Heavy &  two-handed &  oversized &  special
