@@ -5,50 +5,20 @@ import monster.levelpack.*;
 
 public class SystemLogic {
 
-    public monster.levelpack.DetermineLevel determineLevel;
-    private int level = 0;
+    public DetermineLevel determineLevel;
+    public DetermineClass determineClass;
     private Scanner reader;
 
     public SystemLogic() {
         this.determineLevel = new DetermineLevel();
-
+        this.determineClass = new DetermineClass();
     }
 
     public int chooseLevel(Scanner reader) {
-        return this.level = determineLevel.chooseLevel(reader);
-    }
-// Vähän hassu rakenne vielä, kun eriytin tästä levelin päättämisen jo muualle - Heikki Hei
-
-    public static String chooseType(Scanner reader) {
-        String inputType = "";
-        while (true) {
-            System.out.println("Valitse tyyppi: Hirviö (H) tai NPC (N)");
-            inputType = reader.nextLine();
-            if (inputType.equalsIgnoreCase("H")) {
-                break;
-            }
-            if (inputType.equalsIgnoreCase("N")) {
-                break;
-            }
-        }
-        return inputType;
+        return determineLevel.chooseLevel(reader);
     }
 
-    public static String inputTypeToMonsterType(String inputType) {
-        try {
-            String monsterType;
-            if (inputType.equalsIgnoreCase("h")) {
-                return monsterType = "Monsu";
-            }
-            if (inputType.equalsIgnoreCase("n")) {
-                return monsterType = "NPC";
-            } else {
-                return monsterType = "tuntematon";
-            }
-        } catch (Exception e) {
-        }
-        return "tuntematon";
+    public String chooseType(Scanner reader) {
+        return this.determineClass.chooseType(reader);
     }
-
-    // En ehtinyt opetella ja tehdä try-catch -testereitä, jää ensi viikkoon. -Heikki Hei
 }

@@ -6,6 +6,7 @@ P:\NetBeansProjects\monsterepo\MonsterGenerator\src\main\java\monster\userInterf
 P:\NetBeansProjects\monsterepo\MonsterGenerator\src\main\java\monster\monstergenerator\Main.java
 P:\NetBeansProjects\monsterepo\MonsterGenerator\src\main\java\monster\logic\SystemLogic.java
 P:\NetBeansProjects\monsterepo\MonsterGenerator\src\main\java\monster\levelpack\DetermineLevel.java
+P:\NetBeansProjects\monsterepo\MonsterGenerator\src\main\java\monster\levelpack\DetermineClass.java
 P:\NetBeansProjects\monsterepo\MonsterGenerator\src\main\java\monster\randomizer\RandomRace.java
 P:\NetBeansProjects\monsterepo\MonsterGenerator\src\main\java\monster\randomizer\RandomName.java
 P:\NetBeansProjects\monsterepo\MonsterGenerator\src\main\java\monster\randomizer\RandomClass.java

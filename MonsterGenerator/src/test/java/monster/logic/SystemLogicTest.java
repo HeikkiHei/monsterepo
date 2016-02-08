@@ -22,54 +22,6 @@ public class SystemLogicTest {
     }
 
     @Test
-    public void chooseTypeWorksNPC() {
-        String input = "N";
-
-        Scanner reader = new Scanner(input);
-        String output = testableLogic.chooseType(reader);
-        assertEquals("N", output);
-    }
-
-    @Test
-    public void chooseTypeWorksMonster() {
-        String input = "H";
-
-        Scanner reader = new Scanner(input);
-        String output = testableLogic.chooseType(reader);
-        assertEquals("H", output);
-    }
-
-    //<editor-fold defaultstate="collapsed" desc="inputTypeToMonsterTests">
-    @Test
-    public void inputTypeToMonsterTypeNpcWorks() {
-        String input = "N";
-        String output = testableLogic.inputTypeToMonsterType(input);
-        assertEquals("NPC", output);
-    }
-
-    @Test
-    public void inputTypeToMonsterTypeMonsterWorks() {
-        String input = "H";
-        String output = testableLogic.inputTypeToMonsterType(input);
-        assertEquals("Monsu", output);
-    }
-
-    @Test
-    public void inputTypeToMonsterTypeIllegalWorks() {
-        String input = "G";
-        String output = testableLogic.inputTypeToMonsterType(input);
-        assertEquals("tuntematon", output);
-    }
-
-    @Test
-    public void inputTypeToMonsterTypeNullWorks() {
-        String input = null;
-        String output = testableLogic.inputTypeToMonsterType(input);
-        assertEquals("tuntematon", output);
-    }
-//</editor-fold>
-
-    @Test
     public void creatureCreationWorksNPC() {
         inputStream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(inputStream));

@@ -19,8 +19,7 @@ public class TextInterface {
     public void run() {
         this.inputType = logic.chooseType(reader);
         this.inputInteger = logic.chooseLevel(reader);
-        String monsterType = logic.inputTypeToMonsterType(inputType);
-        System.out.print("Päädyit hahmoon, jonka tyyppi on " + monsterType + " ja taso on " + this.inputInteger);
+        System.out.print("Päädyit hahmoon, jonka tyyppi on " + inputType + " ja taso on " + this.inputInteger);
     }
 
 }

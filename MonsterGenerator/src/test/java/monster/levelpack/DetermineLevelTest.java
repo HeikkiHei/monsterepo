@@ -42,7 +42,7 @@ public class DetermineLevelTest {
         inputStream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(inputStream));
 
-        String input = createTestLine("11", "5");
+        String input = createTestLine("111", "5");
         int output = testableLevelpack.chooseLevel(new Scanner(input));
         assertEquals(5, output);
     }
