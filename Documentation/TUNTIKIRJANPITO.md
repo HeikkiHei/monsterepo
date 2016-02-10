@@ -9,5 +9,6 @@
 
 4.2.2016:	4h	refaktorointia, testejä, datatiedostojen luonti   
 5.2.2016:	5h	lisää luokkia, datatiedostojen muokkaus, luokkakaavio
+10.2.2016:	4h	graafisen käyttöliittymän aloitus   
   
 Yhteensä: 24h

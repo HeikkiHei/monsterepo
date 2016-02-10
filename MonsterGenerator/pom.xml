@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>monster</groupId>
+    <groupId>fi.heikkihei.monster</groupId>
     <artifactId>MonsterGenerator</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -18,6 +18,12 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>fi.heikkihei.monster</groupId>
+            <artifactId>MonsterGenerator</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
 
@@ -51,15 +57,14 @@
                 <version>1.1.8</version>
                 <configuration>
                     <targetClasses>
-                        <param>monster.creature.*</param>
-                        <param>monster.generateStats.*</param>
-                        <param>monster.levelpack.*</param>
-                        <param>monster.logic.*</param>
-                        <param>monster.randomizer.*</param>
-                        <param>monster.userInterface.*</param>
+                        <param>fi.heikkihei.monster.creature.*</param>
+                        <param>fi.heikkihei.monster.generateStats.*</param>
+                        <param>fi.heikkihei.monster.levelpack.*</param>
+                        <param>fi.heikkihei.monster.logic.*</param>
+                        <param>fi.heikkihei.monster.randomizer.*</param>
                     </targetClasses>
                     <targetTests>
-                        <param>monster.*</param>
+                        <param>fi.heikkihei.monster.*</param>
                     </targetTests>
                 </configuration>
             </plugin>
