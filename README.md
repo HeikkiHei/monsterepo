@@ -8,6 +8,6 @@ Ohjelma, joka satunnaisgeneroi hirviöitä ja NPC-hahmoja roolipeliä varten.
 
 [Tuntikirjanpito](Documentation/TUNTIKIRJANPITO.md)
 
-[Pit-raportti](http://htmlpreview.github.io/?https://github.com/HeikkiHei/monsterepo/Documentation/Pit/index.html)
+[Pit-raportti](http://htmlpreview.github.io/?https://github.com/HeikkiHei/blob/master/monsterepo/Documentation/Pit/index.html)
 
 [JavaDocs](http://htmlpreview.github.io/?https://github.com/HeikkiHei/monsterepo/Documentation/JavaDocs/index.html)
