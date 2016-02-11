@@ -36,7 +36,7 @@ public class Creature {
 
     /**
      *
-     * @param Str
+     * @param Str rajoitetaan 1-10.
      */
         public void setStr(int Str) {
         if (Str >= 1 && Str <= 10) {
@@ -54,7 +54,7 @@ public class Creature {
 
     /**
      *
-     * @param Dex
+     * @param Dex  rajoitetaan 1-10.
      */
     public void setDex(int Dex) {
         if (Dex >= 1 && Dex <= 10) {
@@ -72,7 +72,7 @@ public class Creature {
 
     /**
      *
-     * @param Con
+     * @param Con  rajoitetaan 1-10.
      */
     public void setCon(int Con) {
         if (Con >= 1 && Con <= 10) {
@@ -90,7 +90,7 @@ public class Creature {
 
     /**
      *
-     * @param Int
+     * @param Int  rajoitetaan 1-10.
      */
     public void setInt(int Int) {
         if (Int >= 1 && Int <= 10) {
@@ -108,7 +108,7 @@ public class Creature {
 
     /**
      *
-     * @param Wis
+     * @param Wis  rajoitetaan 1-10.
      */
     public void setWis(int Wis) {
         if (Wis >= 1 && Wis <= 10) {
@@ -126,7 +126,7 @@ public class Creature {
 
     /**
      *
-     * @param Cha
+     * @param Cha  rajoitetaan 1-10.
      */
     public void setCha(int Cha) {
         if (Cha >= 1 && Cha <= 10) {
@@ -144,7 +144,7 @@ public class Creature {
 
     /**
      *
-     * @param creatureClass
+     * @param creatureClass asetetaan hahmolle luokka.
      */
     public void setCreatureClass(String creatureClass) {
         if (creatureClass != null) {
@@ -162,7 +162,7 @@ public class Creature {
 
     /**
      *
-     * @param name
+     * @param name asetetaan hahmolle nimi.
      */
     public void setName(String name) {
         if (name != null) {
@@ -180,7 +180,7 @@ public class Creature {
 
     /**
      *
-     * @param weapon
+     * @param weapon annetaan hahmolle ase.
      */
     public void setWeapon(String weapon) {
         if (weapon != null) {
@@ -190,7 +190,7 @@ public class Creature {
 
     /**
      *
-     * @param race
+     * @param race asetetaan hahmolle rotu.
      */
     public void setRace(String race) {
         if (race != null) {
