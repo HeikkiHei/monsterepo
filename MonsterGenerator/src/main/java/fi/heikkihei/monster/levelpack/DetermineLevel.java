@@ -2,12 +2,26 @@ package fi.heikkihei.monster.levelpack;
 
 import java.util.*;
 
+/**
+ * Luokka, joka tulee vielä täysin muuttumaan, kunhan saan GUIn rakennettua loppuun.
+ * Sisältää vielä liikaa tekstikäyttöliittymän osia.
+ * 
+ * @author HeikkiHei
+ */
 public class DetermineLevel {
 
+    /**
+     * Parametritön konstruktori.
+     */
     public DetermineLevel() {
     }
     
-        public static int chooseLevel(Scanner reader) {
+    /**
+     *
+     * @param reader lukija syötettä varten.
+     * @return monsterLevel jonka metodi saa syötteenä, rajoitettu välille 1-10.
+     */
+    public static int chooseLevel(Scanner reader) {
 
         int monsterLevel = 0;
 
@@ -15,17 +29,13 @@ public class DetermineLevel {
             System.out.println("Valitse taso: 1-10");
             try {
                 monsterLevel = Integer.parseInt(reader.nextLine());
-            } catch (Exception e) {
+            } catch (NumberFormatException nfe) {
             }
-            if (monsterLevel < 11) {
-                if (monsterLevel > 0) { // Jaettu kahtia saadakseni selvyyttä PITiin - Heikki Hei
+            if (monsterLevel < 11 &&monsterLevel > 0) {
                     break;
                 }
-            }
         }
         return monsterLevel;
     }
-    
-    
-//TODO : Tästä tullee osa GUIn slideria, jolla käyttäjä määrittää haluamansa levelin. Level määrittää monsun tason ja/tai monsujen määrän - Heikki Hei
+
 }

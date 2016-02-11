@@ -2,11 +2,25 @@ package fi.heikkihei.monster.levelpack;
 
 import java.util.*;
 
+/**
+ * Luokka, joka tulee vielä täysin muuttumaan, kunhan saan GUIn rakennettua loppuun.
+ * Sisältää vielä liikaa tekstikäyttöliittymän osia.
+ * 
+ * @author HeikkiHei
+ */
 public class DetermineType {
 
+    /**
+     * Parametritön konstruktori
+     */
     public DetermineType() {
     }
 
+    /**
+     *
+     * @param reader lukija, jolla tulkitaan haluttu tyyppi.
+     * @return palautetaan haluttu tyyppi apumetodin tekstiksi muuttamana.
+     */
     public static String chooseType(Scanner reader) {
         String inputType = "";
         while (true) {
@@ -22,6 +36,11 @@ public class DetermineType {
         return changeInputLetterForToString(inputType);
     }
 
+    /**
+     *
+     * @param inputType päämetodin antama syöte.
+     * @return syöte muutettu kirjaimesta tekstiksi.
+     */
     public static String changeInputLetterForToString(String inputType) {
         try {
             String monsterType;

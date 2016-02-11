@@ -3,13 +3,23 @@ package fi.heikkihei.monster.userInterface;
 import java.awt.*;
 import javax.swing.*;
 
+/**
+ *
+ * @author HeikkiHei
+ */
 public class GraphicUserInterface implements Runnable {
 
     private JFrame frame;
 
+    /**
+     * Parametritön konstruktori.
+     */
     public GraphicUserInterface() {
     }
 
+    /**
+     * Override run, luodaan suoritusikkuna.
+     */
     @Override
     public void run() {
         frame = new JFrame("MonsterGenerator");
@@ -23,19 +33,25 @@ public class GraphicUserInterface implements Runnable {
         frame.setVisible(true);
     }
 
+    /**
+     *
+     * @param container luodaan suoritusikkunaan komponentit. Radionapit
+     * npcButton ja monsterButton valitsevat luotavan tyypin, Liuku setLevel
+     * määrittää hahmon tason, Nappi Generate luo hahmon.
+     */
     private void createComponents(Container container) {
         container.setLayout(new BoxLayout(container, BoxLayout.Y_AXIS));
 
         ButtonGroup askType = new ButtonGroup();
-        JRadioButton npc = new JRadioButton("NPC");
-        JRadioButton monster = new JRadioButton("Monster");
-        monster.setSelected(true);
+        JRadioButton npcButton = new JRadioButton("NPC");
+        JRadioButton monsterButton = new JRadioButton("Monster");
+        monsterButton.setSelected(true);
 
-        askType.add(npc);
-        askType.add(monster);
+        askType.add(npcButton);
+        askType.add(monsterButton);
 
-        container.add(npc);
-        container.add(monster);
+        container.add(npcButton);
+        container.add(monsterButton);
 
         JSlider setLevel = createSlider(container);
 
@@ -43,24 +59,39 @@ public class GraphicUserInterface implements Runnable {
 
         JTextArea printOut = createPrintOutArea(container);
 
-        ActionListenerForGUI algui = new ActionListenerForGUI(generate, printOut, setLevel, npc, monster);
-        generate.addActionListener(algui);
+        ActionListenerForGUI listener = new ActionListenerForGUI(generate, printOut, setLevel, npcButton, monsterButton);
+        generate.addActionListener(listener);
 
     }
 
+    /**
+     * Suoritusikkunan komponentin alimetodi.
+     * @param container mihin lisätään TextArea
+     * @return alue, johon tulostuu hahmon tiedot.
+     */
     private JTextArea createPrintOutArea(Container container) {
         JTextArea printOut = new JTextArea();
         printOut.setEnabled(false);
         container.add(printOut);
         return printOut;
     }
-
+    
+    /**
+     * 
+     * @param container mihin lisätään nappi.
+     * @return nappi, jolla luodaan hahmo.
+     */
     private JButton createGenerateButton(Container container) {
         JButton generate = new JButton("GENERATE");
         container.add(generate);
         return generate;
     }
-
+    
+    /**
+     * 
+     * @param container tähän lisätään liuku
+     * @return liuku, jolla määritetään hahmon taso.
+     */
     private JSlider createSlider(Container container) {
         JSlider setLevel = new JSlider(1, 10);
         setLevel.setMajorTickSpacing(1);

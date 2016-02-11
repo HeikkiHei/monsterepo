@@ -1,5 +1,10 @@
 package fi.heikkihei.monster.generateStats;
 
+/**
+ * Luokka täysin kesken, saattaa jäädä uuden idean jalkoihin.
+ *
+ * @author HeikkiHei
+ */
 public class StatsGenerator {
 //
 //    public int randomStr() {

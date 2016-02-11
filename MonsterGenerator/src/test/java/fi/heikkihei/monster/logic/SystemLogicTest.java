@@ -9,11 +9,16 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+/**
+ *
+ * @author HeikkiHei
+ */
 public class SystemLogicTest {
 
     SystemLogic testableLogic;
     ByteArrayOutputStream inputStream;
 
+ 
     public SystemLogicTest() {
     }
 

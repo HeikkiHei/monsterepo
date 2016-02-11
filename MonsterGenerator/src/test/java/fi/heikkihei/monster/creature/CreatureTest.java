@@ -5,6 +5,10 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+/**
+ *
+ * @author HeikkiHei
+ */
 public class CreatureTest {
 
     public Creature creature;
@@ -35,6 +39,7 @@ public class CreatureTest {
         assertEquals("otus paladin örkki", creature.toString());
     }
 
+    //<editor-fold defaultstate="collapsed" desc="Testataan setterit ja getterit isossa nipussa">
     @Test
     public void settersAndGettersLegalWork() {
         creature.setStr(10);
@@ -58,7 +63,7 @@ public class CreatureTest {
         creature.setWeapon("weapon");
         assertEquals("weapon", creature.getWeapon());
     }
-
+    
     @Test
     public void settersAndGettersTooSmallWork() {
         creature.setStr(-10);
@@ -74,7 +79,7 @@ public class CreatureTest {
         creature.setCha(-10);
         assertEquals(1, creature.getCha());
     }
-
+    
     @Test
     public void settersAndGettersTooLargeWork() {
         creature.setStr(11);
@@ -90,7 +95,7 @@ public class CreatureTest {
         creature.setCha(11);
         assertEquals(1, creature.getCha());
     }
-
+    
     @Test
     public void settersAndGettersStringNullWork() {
         creature.setName(null);
@@ -102,5 +107,6 @@ public class CreatureTest {
         creature.setWeapon(null);
         assertEquals("none", creature.getWeapon());
     }
+//</editor-fold>
 
 }
