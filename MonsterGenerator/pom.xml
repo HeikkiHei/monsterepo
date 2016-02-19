@@ -19,6 +19,13 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
+  <dependency>
+     <groupId>com.opencsv</groupId>
+     <artifactId>opencsv</artifactId>
+     <version>3.7</version>
+  </dependency>
+
         <dependency>
             <groupId>fi.heikkihei.monster</groupId>
             <artifactId>MonsterGenerator</artifactId>
@@ -65,9 +72,7 @@
                 <configuration>
                     <targetClasses>
                         <param>fi.heikkihei.monster.creature.*</param>
-                        <param>fi.heikkihei.monster.generateStats.*</param>
-                        <param>fi.heikkihei.monster.levelpack.*</param>
-                        <param>fi.heikkihei.monster.logic.*</param>
+                        <param>fi.heikkihei.monster.generatestats.*</param>
                         <param>fi.heikkihei.monster.randomizer.*</param>
                     </targetClasses>
                     <targetTests>

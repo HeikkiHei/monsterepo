@@ -1,4 +1,4 @@
-package fi.heikkihei.monster.userInterface;
+package fi.heikkihei.monster.userinterface;
 
 import java.awt.*;
 import javax.swing.*;
@@ -15,6 +15,7 @@ public class GraphicUserInterface implements Runnable {
      * Parametritön konstruktori.
      */
     public GraphicUserInterface() {
+
     }
 
     /**
@@ -66,6 +67,7 @@ public class GraphicUserInterface implements Runnable {
 
     /**
      * Suoritusikkunan komponentin alimetodi.
+     *
      * @param container mihin lisätään TextArea
      * @return alue, johon tulostuu hahmon tiedot.
      */
@@ -75,9 +77,9 @@ public class GraphicUserInterface implements Runnable {
         container.add(printOut);
         return printOut;
     }
-    
+
     /**
-     * 
+     *
      * @param container mihin lisätään nappi.
      * @return nappi, jolla luodaan hahmo.
      */
@@ -86,9 +88,9 @@ public class GraphicUserInterface implements Runnable {
         container.add(generate);
         return generate;
     }
-    
+
     /**
-     * 
+     *
      * @param container tähän lisätään liuku
      * @return liuku, jolla määritetään hahmon taso.
      */

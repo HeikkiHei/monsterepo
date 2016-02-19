@@ -2,7 +2,7 @@
 package fi.heikkihei.monster.main;
 
 import javax.swing.SwingUtilities;
-import fi.heikkihei.monster.userInterface.GraphicUserInterface;
+import fi.heikkihei.monster.userinterface.GraphicUserInterface;
 
 /**
  * @author HeikkiHei

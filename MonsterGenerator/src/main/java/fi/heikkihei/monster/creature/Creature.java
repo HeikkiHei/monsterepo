@@ -3,7 +3,6 @@ package fi.heikkihei.monster.creature;
 import java.util.*;
 
 /**
- *
  * @author HeikkiHei
  */
 public class Creature {
@@ -12,15 +11,18 @@ public class Creature {
     private String creatureClass;
     private String race;
     private String weapon;
-    private int Str;
-    private int Dex;
-    private int Con;
-    private int Int;
-    private int Wis;
-    private int Cha;
+    private int strength;
+    private int dexterity;
+    private int constitution;
+    private int intelligence;
+    private int wisdom;
+    private int charisma;
+    private int level;
+
+    public Creature() {
+    }
 
     /**
-     *
      * @param name hahmon nimi.
      * @param creatureClass hahmon luokka.
      * @param race hahmon rotu.
@@ -30,120 +32,89 @@ public class Creature {
         this.creatureClass = creatureClass;
         this.race = race;
         this.weapon = "none";
+        this.level = 0;
     }
-
 //<editor-fold defaultstate="collapsed" desc="Getters and Setters">
 
     /**
-     *
-     * @param Str rajoitetaan 1-10.
+     * @param strength rajoitetaan 1-20.
      */
-        public void setStr(int Str) {
-        if (Str >= 1 && Str <= 10) {
-            this.Str = Str;
+    public void setStrength(int strength) {
+        if (strength >= 1 && strength <= 20) {
+            this.strength = strength;
         }
     }
 
-    /**
-     *
-     * @return
-     */
-    public int getStr() {
-        return Str;
+    public int getStrength() {
+        return strength;
     }
 
     /**
-     *
-     * @param Dex  rajoitetaan 1-10.
+     * @param dexterity rajoitetaan 1-20.
      */
-    public void setDex(int Dex) {
-        if (Dex >= 1 && Dex <= 10) {
-            this.Dex = Dex;
+    public void setDexterity(int dexterity) {
+        if (dexterity >= 1 && dexterity <= 20) {
+            this.dexterity = dexterity;
         }
     }
 
-    /**
-     *
-     * @return
-     */
-    public int getDex() {
-        return Dex;
+    public int getDexterity() {
+        return dexterity;
     }
 
     /**
-     *
-     * @param Con  rajoitetaan 1-10.
+     * @param constitution rajoitetaan 1-20.
      */
-    public void setCon(int Con) {
-        if (Con >= 1 && Con <= 10) {
-            this.Con = Con;
+    public void setConstitution(int constitution) {
+        if (constitution >= 1 && constitution <= 20) {
+            this.constitution = constitution;
         }
     }
 
-    /**
-     *
-     * @return
-     */
-    public int getCon() {
-        return Con;
+    public int getConstitution() {
+        return constitution;
     }
 
     /**
-     *
-     * @param Int  rajoitetaan 1-10.
+     * @param intelligence rajoitetaan 1-20.
      */
-    public void setInt(int Int) {
-        if (Int >= 1 && Int <= 10) {
-            this.Int = Int;
+    public void setIntelligence(int intelligence) {
+        if (intelligence >= 1 && intelligence <= 20) {
+            this.intelligence = intelligence;
         }
     }
 
-    /**
-     *
-     * @return
-     */
-    public int getInt() {
-        return Int;
+    public int getIntelligence() {
+        return intelligence;
     }
 
     /**
-     *
-     * @param Wis  rajoitetaan 1-10.
+     * @param wisdom rajoitetaan 1-20.
      */
-    public void setWis(int Wis) {
-        if (Wis >= 1 && Wis <= 10) {
-            this.Wis = Wis;
+    public void setWisdom(int wisdom) {
+        if (wisdom >= 1 && wisdom <= 20) {
+            this.wisdom = wisdom;
         }
     }
 
-    /**
-     *
-     * @return
-     */
-    public int getWis() {
-        return Wis;
+    public int getWisdom() {
+        return wisdom;
     }
 
     /**
-     *
-     * @param Cha  rajoitetaan 1-10.
+     * @param charisma rajoitetaan 1-20.
      */
-    public void setCha(int Cha) {
-        if (Cha >= 1 && Cha <= 10) {
-            this.Cha = Cha;
+    public void setCharisma(int charisma) {
+        if (charisma >= 1 && charisma <= 20) {
+            this.charisma = charisma;
         }
     }
 
-    /**
-     *
-     * @return
-     */
-    public int getCha() {
-        return Cha;
+    public int getCharisma() {
+        return charisma;
     }
 
     /**
-     *
      * @param creatureClass asetetaan hahmolle luokka.
      */
     public void setCreatureClass(String creatureClass) {
@@ -152,16 +123,11 @@ public class Creature {
         }
     }
 
-    /**
-     *
-     * @return
-     */
     public String getCreatureClass() {
         return creatureClass;
     }
 
     /**
-     *
      * @param name asetetaan hahmolle nimi.
      */
     public void setName(String name) {
@@ -170,16 +136,11 @@ public class Creature {
         }
     }
 
-    /**
-     *
-     * @return
-     */
     public String getName() {
         return name;
     }
 
     /**
-     *
      * @param weapon annetaan hahmolle ase.
      */
     public void setWeapon(String weapon) {
@@ -188,8 +149,11 @@ public class Creature {
         }
     }
 
+    public String getWeapon() {
+        return weapon;
+    }
+
     /**
-     *
      * @param race asetetaan hahmolle rotu.
      */
     public void setRace(String race) {
@@ -198,30 +162,34 @@ public class Creature {
         }
     }
 
-    /**
-     *
-     * @return
-     */
     public String getRace() {
         return race;
     }
 
-    /**
-     *
-     * @return
-     */
-    public String getWeapon() {
-        return weapon;
+    public void setLevel(int level) {
+        this.level = level;
     }
-//</editor-fold>
 
+    public int getLevel() {
+        return level;
+    }
+
+//</editor-fold>
     /**
-     *
      * @return nimi, luokka, rotu.
      */
     @Override
     public String toString() {
-        return this.name + " " + this.creatureClass + " " + this.race;
+        return this.name
+                + "\n " + this.creatureClass
+                + "\n " + this.race
+                + "\n " + this.level
+                + "\n " + this.strength
+                + "\n " + this.dexterity
+                + "\n " + this.constitution
+                + "\n " + this.intelligence
+                + "\n " + this.wisdom
+                + "\n " + this.charisma;
     }
 
 }

@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
  */
 public class RandomizerTest {
 
-    Randomizer testable;
-    File inputFile = new File("src\\test\\java\\fi\\heikkihei\\monster\\datafiles\\test.csv");
+    private Randomizer testable;
+    private File inputFile = new File("src\\test\\java\\fi\\heikkihei\\monster\\datafiles\\test.csv");
 
     public RandomizerTest() {
     }

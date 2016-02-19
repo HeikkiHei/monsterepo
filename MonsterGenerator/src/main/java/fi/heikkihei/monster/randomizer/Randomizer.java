@@ -42,11 +42,10 @@ public class Randomizer {
     private void changeFileIntoStrings(File inputFile) throws FileNotFoundException {
         try (Scanner reader = new Scanner(inputFile)) {
             while (reader.hasNextLine()) {
-                String InputForOneInstance = reader.nextLine();
-                fileAsStrings.add(InputForOneInstance);
+                String inputForOneInstance = reader.nextLine();
+                fileAsStrings.add(inputForOneInstance);
             }
         }
     }
-    
-
+     
 }

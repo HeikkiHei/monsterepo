@@ -19,8 +19,6 @@ public class RandomRace {
         this.inputFile = inputFile;
     }
     
-    
-
     /**
      * Luetaan tiedosto joka sisältää rodut ja arvotaan satunnainen rivi eli
      * satunnainen rotu.

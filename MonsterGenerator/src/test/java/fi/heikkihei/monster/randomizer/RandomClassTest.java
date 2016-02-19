@@ -12,8 +12,8 @@ import static org.junit.Assert.*;
  */
 public class RandomClassTest {
 
-    RandomClass testable;
-    File inputFile = new File("src\\test\\java\\fi\\heikkihei\\monster\\datafiles\\test.csv");
+    private RandomClass testable;
+    private File inputFile = new File("src\\test\\java\\fi\\heikkihei\\monster\\datafiles\\test.csv");
 
     public RandomClassTest() {
     }

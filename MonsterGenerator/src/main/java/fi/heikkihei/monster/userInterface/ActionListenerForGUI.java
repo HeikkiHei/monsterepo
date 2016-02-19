@@ -1,6 +1,11 @@
-package fi.heikkihei.monster.userInterface;
+package fi.heikkihei.monster.userinterface;
 
+import fi.heikkihei.monster.creature.Creature;
+import fi.heikkihei.monster.generatestats.GenerateCreature;
 import java.awt.event.*;
+import java.io.FileNotFoundException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.*;
 
 /**
@@ -14,6 +19,7 @@ public class ActionListenerForGUI implements ActionListener {
     private JSlider setLevel;
     private JRadioButton npcButton;
     private JRadioButton monsterButton;
+    private GenerateCreature generateStats;
 
     /**
      *
@@ -29,22 +35,32 @@ public class ActionListenerForGUI implements ActionListener {
         this.setLevel = setLevel;
         this.npcButton = npcButton;
         this.monsterButton = monsterButton;
+
     }
 
     /**
      * Kuunnellaan nappia Generate, lisätietoja radionapeista ja liuku'usta.
+     *
      * @param ae kuunneltava event.
      *
      */
     @Override
     public void actionPerformed(ActionEvent ae) {
-        int level = this.setLevel.getValue();
+        this.generateStats = new GenerateCreature(this.setLevel.getValue());
         if (ae.getSource() == this.generate) {
-            if (this.npcButton.isSelected()) {
-                this.output.setText("NPC " + level + " ");
+            if (this.npcButton.isSelected()) {              
+                try {
+                    this.output.setText(this.generateStats.create());
+                } catch (FileNotFoundException ex) {
+                    Logger.getLogger(ActionListenerForGUI.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
             if (this.monsterButton.isSelected()) {
-                this.output.setText("Monster " + level + " ");
+                try {
+                    this.output.setText(this.generateStats.create());
+                } catch (FileNotFoundException ex) {
+                    Logger.getLogger(ActionListenerForGUI.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         }
     }
