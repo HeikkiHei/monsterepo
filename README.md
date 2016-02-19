@@ -10,6 +10,6 @@ Ohjelma, joka satunnaisgeneroi hirviöitä ja NPC-hahmoja roolipeliä varten.
 
 [Pit-raportti](http://htmlpreview.github.io/?https://github.com/HeikkiHei/monsterepo/blob/master/Documentation/Pit/index.html)     
 
-[JavaDocs](http://htmlpreview.github.io/?https://github.com/HeikkiHei/monsterepo/blob/master/Documentation/JavaDocs/index.html)    
+[JavaDocs](http://htmlpreview.github.io/?https://github.com/HeikkiHei/monsterepo/blob/master/Documentation/Checkstyle/apidocs/index.html)    
 
 [Checkstyle](http://htmlpreview.github.io/?https://github.com/HeikkiHei/monsterepo/blob/master/Documentation/Checkstyle/checkstyle.html)   
