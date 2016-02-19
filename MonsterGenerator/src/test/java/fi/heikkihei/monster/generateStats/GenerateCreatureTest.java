@@ -44,37 +44,37 @@ public class GenerateCreatureTest {
     
     @Test
     public void randomStrWorks() {
-        this.testableGenerator.randomStr();
+        this.testableGenerator.randomStrength();
         assertEquals(this.testableGenerator.getIntStat() + this.testableGenerator.getLevel(), this.testableGenerator.getCreature().getStrength());
     }
     
     @Test
     public void randomDexWorks() {
-        this.testableGenerator.randomDex();
+        this.testableGenerator.randomDexterity();
         assertEquals(this.testableGenerator.getIntStat() + this.testableGenerator.getLevel(), this.testableGenerator.getCreature().getDexterity());
     }
     
     @Test
     public void randomConWorks() {
-        this.testableGenerator.randomCon();
+        this.testableGenerator.randomConstitution();
         assertEquals(this.testableGenerator.getIntStat() + this.testableGenerator.getLevel(), this.testableGenerator.getCreature().getConstitution());
     }
     
     @Test
     public void randomIntWorks() {
-        this.testableGenerator.randomInt();
+        this.testableGenerator.randomIntelligence();
         assertEquals(this.testableGenerator.getIntStat() + this.testableGenerator.getLevel(), this.testableGenerator.getCreature().getIntelligence());
     }
     
     @Test
     public void randomWisWorks() {
-        this.testableGenerator.randomWis();
+        this.testableGenerator.randomWisdom();
         assertEquals(this.testableGenerator.getIntStat() + this.testableGenerator.getLevel(), this.testableGenerator.getCreature().getWisdom());
     }
     
     @Test
     public void randomChaWorks() {
-        this.testableGenerator.randomCha();
+        this.testableGenerator.randomCharisma();
         assertEquals(this.testableGenerator.getIntStat() + this.testableGenerator.getLevel(), this.testableGenerator.getCreature().getCharisma());
     }
     

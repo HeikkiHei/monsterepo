@@ -47,12 +47,12 @@ public class GenerateCreature {
         randomCreatureClass();
         randomRace();
 
-        randomStr();
-        randomDex();
-        randomCon();
-        randomInt();
-        randomWis();
-        randomCha();
+        randomStrength();
+        randomDexterity();
+        randomConstitution();
+        randomIntelligence();
+        randomWisdom();
+        randomCharisma();
         
         return this.creature.toString();
     }
@@ -63,32 +63,32 @@ public class GenerateCreature {
         return 1 + random.nextInt(10);
     }
 
-    public void randomStr() {
+    public void randomStrength() {
         this.intStat = castD10();
         this.creature.setStrength(this.intStat + this.level);
     }
 
-    public void randomDex() {
+    public void randomDexterity() {
         this.intStat = castD10();
         this.creature.setDexterity(this.intStat + this.level);
     }
 
-    public void randomCon() {
+    public void randomConstitution() {
         this.intStat = castD10();
         this.creature.setConstitution(this.intStat + this.level);
     }
 
-    public void randomInt() {
+    public void randomIntelligence() {
         this.intStat = castD10();
         this.creature.setIntelligence(this.intStat + this.level);
     }
 
-    public void randomWis() {
+    public void randomWisdom() {
         this.intStat = castD10();
         this.creature.setWisdom(this.intStat + this.level);
     }
 
-    public void randomCha() {
+    public void randomCharisma() {
         this.intStat = castD10();
         this.creature.setCharisma(this.intStat + this.level);
     }

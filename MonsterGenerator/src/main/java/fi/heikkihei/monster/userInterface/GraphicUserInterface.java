@@ -15,7 +15,6 @@ public class GraphicUserInterface implements Runnable {
      * Parametritön konstruktori.
      */
     public GraphicUserInterface() {
-
     }
 
     /**
@@ -88,7 +87,6 @@ public class GraphicUserInterface implements Runnable {
         container.add(generate);
         return generate;
     }
-
     /**
      *
      * @param container tähän lisätään liuku
