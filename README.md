@@ -1,15 +1,15 @@
 # monsterepo
 ##Random monster generator
-
-Ohjelma, joka satunnaisgeneroi hirviöitä ja NPC-hahmoja roolipeliä varten.
-
+   
+Ohjelma, joka satunnaisgeneroi hirviöitä ja NPC-hahmoja roolipeliä varten.   
+   
 ###Dokumentaatio
-[Aiheen kuvaus](Documentation/aiheenKuvausJaRakenne.md)   
+[Aiheen kuvaus](Documentation/aiheenKuvausJaRakenne.md)     
 
-[Tuntikirjanpito](Documentation/TUNTIKIRJANPITO.md)   
+[Tuntikirjanpito](Documentation/TUNTIKIRJANPITO.md)     
 
-[Pit-raportti](http://htmlpreview.github.io/?https://github.com/HeikkiHei/monsterepo/blob/master/Documentation/Pit/index.html)   
+[Pit-raportti](http://htmlpreview.github.io/?https://github.com/HeikkiHei/monsterepo/blob/master/Documentation/Pit/index.html)     
 
-[JavaDocs](http://htmlpreview.github.io/?https://github.com/HeikkiHei/monsterepo/blob/master/Documentation/JavaDocs/index.html)  
+[JavaDocs](http://htmlpreview.github.io/?https://github.com/HeikkiHei/monsterepo/blob/master/Documentation/JavaDocs/index.html)    
 
-[Checkstyle](http://htmlpreview.github.io/?https://github.com/HeikkiHei/monsterepo/blob/master/Documentation/Checkstyle/checkstyle.html) 
+[Checkstyle](http://htmlpreview.github.io/?https://github.com/HeikkiHei/monsterepo/blob/master/Documentation/Checkstyle/checkstyle.html)   

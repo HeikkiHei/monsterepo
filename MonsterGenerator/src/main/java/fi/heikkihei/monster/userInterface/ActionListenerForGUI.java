@@ -19,7 +19,7 @@ public class ActionListenerForGUI implements ActionListener {
     private JSlider setLevel;
     private JRadioButton npcButton;
     private JRadioButton monsterButton;
-    private GenerateCreature generateStats;
+    private GenerateCreature generateCreature;
 
     /**
      *
@@ -40,24 +40,26 @@ public class ActionListenerForGUI implements ActionListener {
 
     /**
      * Kuunnellaan nappia Generate, lisätietoja radionapeista ja liuku'usta.
-     *
+     * Luodaan uusi GenerateCreature, joka luo hahmon kuunneltujen nappien perusteella.
+     * Luotu hahmo palautetaan GUIn output-ikkunaan.
+     * 
      * @param ae kuunneltava event.
      *
      */
     @Override
     public void actionPerformed(ActionEvent ae) {
-        this.generateStats = new GenerateCreature(this.setLevel.getValue());
+        this.generateCreature = new GenerateCreature(this.setLevel.getValue());
         if (ae.getSource() == this.generate) {
             if (this.npcButton.isSelected()) {              
                 try {
-                    this.output.setText(this.generateStats.create());
+                    this.output.setText(this.generateCreature.create());
                 } catch (FileNotFoundException ex) {
                     Logger.getLogger(ActionListenerForGUI.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
             if (this.monsterButton.isSelected()) {
                 try {
-                    this.output.setText(this.generateStats.create());
+                    this.output.setText(this.generateCreature.create());
                 } catch (FileNotFoundException ex) {
                     Logger.getLogger(ActionListenerForGUI.class.getName()).log(Level.SEVERE, null, ex);
                 }
