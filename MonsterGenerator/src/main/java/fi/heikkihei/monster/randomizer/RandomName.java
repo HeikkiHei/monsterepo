@@ -12,7 +12,7 @@ public class RandomName {
     File inputFile;
 
     public RandomName() {
-        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/malenames.csv");
+        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/malenames.csv"); 
     }
 
     public void setInputFile(File inputFile) {

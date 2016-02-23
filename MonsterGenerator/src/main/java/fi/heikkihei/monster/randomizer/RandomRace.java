@@ -12,7 +12,7 @@ public class RandomRace {
     File inputFile;
 
     public RandomRace() {
-        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/races.csv");
+        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/races.csv"); 
     }
 
     public void setInputFile(File inputFile) {

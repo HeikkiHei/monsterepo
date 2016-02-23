@@ -13,7 +13,7 @@ public class RandomClass {
     File inputFile;
 
     public RandomClass() {
-        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/classes.csv");
+        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/classes.csv"); 
     }
 
     public void setInputFile(File inputFile) {

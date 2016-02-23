@@ -12,7 +12,7 @@ public class RandomWeapon {
     File inputFile;
 
     public RandomWeapon() {
-        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/weapons.csv");
+        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/weapons.csv"); 
     }
 
     public void setInputFile(File inputFile) {
