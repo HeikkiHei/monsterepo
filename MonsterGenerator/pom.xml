@@ -12,7 +12,8 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     
-    <dependencies>
+<dependencies>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -32,9 +33,11 @@
             <version>1.0-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
-    </dependencies>
+
+</dependencies>
 
  <reporting>
+
     <plugins>
 
       <plugin>
@@ -51,7 +54,8 @@
 </plugin> 
 
     </plugins>
-  </reporting>
+</reporting>
+
 
     <build>
         <plugins>
