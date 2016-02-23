@@ -38,7 +38,7 @@
 
  <reporting>
 
-    <plugins>
+<plugins>
 
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -54,6 +54,7 @@
 </plugin> 
 
     </plugins>
+
 </reporting>
 
 
