@@ -18,8 +18,7 @@ public class Randomizer {
     public Randomizer() {
     }
 
-    /**
-     * Luetaan haluttu tiedosto ja palautetaan siitä yksi satunnainen rivi.
+    /**Luetaan haluttu tiedosto ja palautetaan siitä yksi satunnainen rivi.
      * 
      * @param inputFile luettava csv-tiedosto, joka sisältää halutun datan.
      * @return satunnainen rivi tiedostosta.
@@ -33,8 +32,7 @@ public class Randomizer {
         return fileAsStrings.get(random.nextInt(fileAsStrings.size()));
     }
 
-    /**
-     * Muutetaan tiedosto csv:stä ArrayListiksi.
+    /**Muutetaan tiedosto csv:stä ArrayListiksi. 
      * 
      * @param inputFile luettava csv-tiedosto.
      * @throws FileNotFoundException jos tiedostoa ei ole.
