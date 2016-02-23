@@ -44,7 +44,7 @@ public class CreatureTest {
 
     @Test
     public void toStringWorks() {
-        assertEquals("otus\n paladin\n örkki\n 5\n 1\n 1\n 1\n 1\n 1\n 1", creature.toString());
+        assertEquals("otus\n paladin\n örkki\n none\n 5\n 1\n 1\n 1\n 1\n 1\n 1", creature.toString());
     }
 
     //<editor-fold defaultstate="collapsed" desc="Testataan setterit ja getterit isossa nipussa">

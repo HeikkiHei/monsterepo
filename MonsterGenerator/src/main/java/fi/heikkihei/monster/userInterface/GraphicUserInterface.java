@@ -23,7 +23,7 @@ public class GraphicUserInterface implements Runnable {
     @Override
     public void run() {
         frame = new JFrame("MonsterGenerator");
-        frame.setPreferredSize(new Dimension(600, 600));
+        frame.setPreferredSize(new Dimension(800, 800));
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 

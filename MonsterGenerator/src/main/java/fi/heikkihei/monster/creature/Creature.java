@@ -183,6 +183,7 @@ public class Creature {
         return this.name
                 + "\n " + this.creatureClass
                 + "\n " + this.race
+                + "\n " + this.weapon
                 + "\n " + this.level
                 + "\n " + this.strength
                 + "\n " + this.dexterity
