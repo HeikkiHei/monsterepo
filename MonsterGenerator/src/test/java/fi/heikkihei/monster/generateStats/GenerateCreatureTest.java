@@ -34,12 +34,8 @@ public class GenerateCreatureTest {
     }
     
     @Test
-    public void createWorks() {
-        try {
+    public void createWorks() throws FileNotFoundException {
             this.testableGenerator.create();
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(GenerateCreatureTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
     }
     
     @Test
