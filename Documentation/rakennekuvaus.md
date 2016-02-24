@@ -1,5 +1,7 @@
 ## **Aihe:** Monster generator
-
+    
+[Aihekuvaus](aiheenKuvausJaRakenne.md)     
+    
 **Rakennekuvaus:**    
 Ohjelmaa käytetään graafisen käyttöliittymän kautta, jonka aktivoi Main-metodi.   
 Graafisessa käyttöliittymässä on yksi radionappipari, jolla valitaan luotavan hahmon tyyppi, joko hirviö tai NPC.   

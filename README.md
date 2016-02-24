@@ -7,6 +7,8 @@ Ohjelma, joka satunnaisgeneroi hirviöitä ja NPC-hahmoja roolipeliä varten.
 [Aihekuvaus](Documentation/aiheenKuvausJaRakenne.md)   
    
 [Rakennekuvaus](Documentation/rakennekuvaus.md)     
+
+[Käyttöohje](Documentation/käyttöohje.md)
    
 [Tuntikirjanpito](Documentation/TUNTIKIRJANPITO.md)       
 
