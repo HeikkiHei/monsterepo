@@ -6,7 +6,7 @@ Tarkoituksena on kehittää järjestelmä, jolla pystytään luomaan satunnainen hahmo
 
 Hahmoille generoidaan erilaisia ominaisuuksia, kuten hahmoluokka, nimi, statistiikka (voima, nopeus, jne) sekä ase.
 
-[Rakennekuvaus](Documentation/rakennekuvaus.md)     
+[Rakennekuvaus](rakennekuvaus.md)     
    
 **Käyttäjät:**    
 Ohjelma ei vaadi kirjautumista, joten käyttäjä on käyttäjä.

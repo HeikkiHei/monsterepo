@@ -1,4 +1,6 @@
-** Rakennekuvaus: **    
+## **Aihe:** Monster generator
+
+**Rakennekuvaus:**    
 Ohjelmaa käytetään graafisen käyttöliittymän kautta, jonka aktivoi Main-metodi.   
 Graafisessa käyttöliittymässä on yksi radionappipari, jolla valitaan luotavan hahmon tyyppi, joko hirviö tai NPC.   
 Radionappien lisäksi on yksi liuku, asetettu välille 1-10. Tällä valitaan hahmon taso.   
