@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 import javax.swing.*;
 
 /**
- * Tapahtumakuuntelija GRaphicUserInterfacelle.
+ * Tapahtumakuuntelija GraphicUserInterfacelle.
  *
  * @author HeikkiHei
  */
