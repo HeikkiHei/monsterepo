@@ -12,6 +12,7 @@
 10.2.2016:	4h	graafisen käyttöliittymän aloitus   
 11.2.2016:	2h	JavaDoc   
 19.2.2016:	6h	Ohjelman kasaaminen toimivaksi kokonaisuudeksi, tekstikäyttöliittymän poisto.
-23.2.2016:	2h	Virheiden korjausta.   
+23.2.2016:	6h	Virheiden korjausta.      
+24.2.2016	4h	Sama jatkuu.   
   
-Yhteensä: 38h
+Yhteensä: 44h

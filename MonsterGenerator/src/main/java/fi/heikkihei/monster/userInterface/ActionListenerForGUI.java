@@ -9,6 +9,7 @@ import java.util.logging.Logger;
 import javax.swing.*;
 
 /**
+ * Tapahtumakuuntelija GRaphicUserInterfacelle.
  *
  * @author HeikkiHei
  */
@@ -22,6 +23,7 @@ public class ActionListenerForGUI implements ActionListener {
     private GenerateCreature generateCreature;
 
     /**
+     * Konstruktori, jolla parametrina alla olevat.
      *
      * @param generate nappi, jolla hahmo luodaan.
      * @param output alue, johon tiedot tulostuvat.
@@ -40,9 +42,9 @@ public class ActionListenerForGUI implements ActionListener {
 
     /**
      * Kuunnellaan nappia Generate, lisätietoja radionapeista ja liuku'usta.
-     * Luodaan uusi GenerateCreature, joka luo hahmon kuunneltujen nappien perusteella.
-     * Luotu hahmo palautetaan GUIn output-ikkunaan.
-     * 
+     * Luodaan uusi GenerateCreature, joka luo hahmon kuunneltujen nappien
+     * perusteella. Luotu hahmo palautetaan GUIn output-ikkunaan.
+     *
      * @param ae kuunneltava event.
      *
      */
@@ -50,7 +52,7 @@ public class ActionListenerForGUI implements ActionListener {
     public void actionPerformed(ActionEvent ae) {
         this.generateCreature = new GenerateCreature(this.setLevel.getValue());
         if (ae.getSource() == this.generate) {
-            if (this.npcButton.isSelected()) {              
+            if (this.npcButton.isSelected()) {
                 try {
                     this.output.setText(this.generateCreature.create());
                 } catch (FileNotFoundException ex) {

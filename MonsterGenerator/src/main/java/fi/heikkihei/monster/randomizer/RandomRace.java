@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 /**
+ * Luodaan hahmolle satunnainen rotu.
  *
  * @author HeikkiHei
  */
@@ -11,14 +12,25 @@ public class RandomRace {
 
     File inputFile;
 
+    /**
+     * Parametritön konstruktori, jossa annetaan kuitenkin oikea tiedosto
+     * luettavaksi.
+     *
+     */
     public RandomRace() {
-        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/races.csv"); 
+        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/races.csv");
     }
 
+    /**
+     * Metodi jolla voidaan asettaa inputFile, lähinnä helpottamaan testien
+     * tekemistä.
+     *
+     * @param inputFile tiedosto joka halutaan luettavan.
+     */
     public void setInputFile(File inputFile) {
         this.inputFile = inputFile;
     }
-    
+
     /**
      * Luetaan tiedosto joka sisältää rodut ja arvotaan satunnainen rivi eli
      * satunnainen rotu.

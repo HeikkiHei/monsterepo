@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
  */
 public class RandomClassTest {
 
-    private RandomClass testable;
+    private RandomCreatureclass testable;
     private File inputFile = new File("./src/test/java/fi/heikkihei/monster/datafiles/test.csv"); 
 
     
@@ -21,7 +21,7 @@ public class RandomClassTest {
 
     @Before
     public void setUp() {
-        testable = new RandomClass();
+        testable = new RandomCreatureclass();
         testable.setInputFile(inputFile);
     }
 

@@ -35,7 +35,20 @@ public class GenerateCreatureTest {
     
     @Test
     public void createWorks() throws FileNotFoundException {
-            this.testableGenerator.create();
+        this.testableGenerator.create();
+        assertNotNull(this.testableGenerator.getCreature().getName());
+        assertNotNull(this.testableGenerator.getCreature().getCreatureClass());
+        assertNotNull(this.testableGenerator.getCreature().getRace());
+        assertNotNull(this.testableGenerator.getCreature().getWeapon());
+        
+        assertNotEquals(0, this.testableGenerator.getCreature().getStrength());
+        assertNotEquals(0, this.testableGenerator.getCreature().getDexterity());
+        assertNotEquals(0, this.testableGenerator.getCreature().getConstitution());
+        assertNotEquals(0, this.testableGenerator.getCreature().getIntelligence());
+        assertNotEquals(0, this.testableGenerator.getCreature().getWisdom());
+        assertNotEquals(0, this.testableGenerator.getCreature().getCharisma());
+        
+        assertNotNull(this.testableGenerator.getCreature().toString());
     }
     
     @Test

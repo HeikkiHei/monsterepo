@@ -18,7 +18,10 @@ public class CreatureTest {
 
     @Before
     public void setUp() {
-        creature = new Creature("otus", "paladin", "örkki");
+        creature = new Creature();
+        creature.setName("otus");
+        creature.setCreatureClass("paladin");
+        creature.setRace("örkki");
         creature.setStrength(1);
         creature.setDexterity(1);
         creature.setConstitution(1);
@@ -30,38 +33,31 @@ public class CreatureTest {
 
     @Test
     public void constructorWorks() {
-        assertEquals("otus", creature.getName());
-        assertEquals("paladin", creature.getCreatureClass());
-        assertEquals("örkki", creature.getRace());
-        assertEquals(5, creature.getLevel());
-    }
-
-    @Test
-    public void constructorNoParaMetersWorks() {
         Creature noParameters = new Creature();
         assertEquals(null, noParameters.getName());
+        assertEquals(0, noParameters.getLevel());
     }
 
     @Test
     public void toStringWorks() {
-        assertEquals("otus\n paladin\n örkki\n none\n 5\n 1\n 1\n 1\n 1\n 1\n 1", creature.toString());
+        assertEquals("otus\n paladin\n örkki\n null\n 5\n 1\n 1\n 1\n 1\n 1\n 1", creature.toString());
     }
 
     //<editor-fold defaultstate="collapsed" desc="Testataan setterit ja getterit isossa nipussa">
     @Test
     public void settersAndGettersLegalWork() {
-        creature.setStrength(10);
-        assertEquals(10, creature.getStrength());
-        creature.setDexterity(10);
-        assertEquals(10, creature.getDexterity());
-        creature.setConstitution(10);
-        assertEquals(10, creature.getConstitution());
-        creature.setIntelligence(10);
-        assertEquals(10, creature.getIntelligence());
-        creature.setWisdom(10);
-        assertEquals(10, creature.getWisdom());
-        creature.setCharisma(10);
-        assertEquals(10, creature.getCharisma());
+        creature.setStrength(20);
+        assertEquals(20, creature.getStrength());
+        creature.setDexterity(20);
+        assertEquals(20, creature.getDexterity());
+        creature.setConstitution(20);
+        assertEquals(20, creature.getConstitution());
+        creature.setIntelligence(20);
+        assertEquals(20, creature.getIntelligence());
+        creature.setWisdom(20);
+        assertEquals(20, creature.getWisdom());
+        creature.setCharisma(20);
+        assertEquals(20, creature.getCharisma());
         creature.setName("name");
         assertEquals("name", creature.getName());
         creature.setCreatureClass("warrior");
@@ -70,6 +66,8 @@ public class CreatureTest {
         assertEquals("orc", creature.getRace());
         creature.setWeapon("weapon");
         assertEquals("weapon", creature.getWeapon());
+        creature.setLevel(5);
+        assertEquals(5, this.creature.getLevel());
     }
 
     @Test
@@ -90,17 +88,17 @@ public class CreatureTest {
 
     @Test
     public void settersAndGettersTooLargeWork() {
-        creature.setStrength(210);
+        creature.setStrength(21);
         assertEquals(1, creature.getStrength());
-        creature.setDexterity(210);
+        creature.setDexterity(21);
         assertEquals(1, creature.getDexterity());
-        creature.setConstitution(220);
+        creature.setConstitution(21);
         assertEquals(1, creature.getConstitution());
-        creature.setIntelligence(100029);
+        creature.setIntelligence(21);
         assertEquals(1, creature.getIntelligence());
-        creature.setWisdom(340);
+        creature.setWisdom(21);
         assertEquals(1, creature.getWisdom());
-        creature.setCharisma(340);
+        creature.setCharisma(21);
         assertEquals(1, creature.getCharisma());
     }
 
@@ -113,7 +111,7 @@ public class CreatureTest {
         creature.setRace(null);
         assertEquals("örkki", creature.getRace());
         creature.setWeapon(null);
-        assertEquals("none", creature.getWeapon());
+        assertEquals(null, creature.getWeapon());
     }
 //</editor-fold>
 

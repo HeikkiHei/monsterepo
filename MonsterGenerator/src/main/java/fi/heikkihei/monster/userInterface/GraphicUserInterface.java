@@ -4,6 +4,7 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * Graafinen käyttöliittymä.
  *
  * @author HeikkiHei
  */
@@ -87,6 +88,7 @@ public class GraphicUserInterface implements Runnable {
         container.add(generate);
         return generate;
     }
+
     /**
      *
      * @param container tähän lisätään liuku

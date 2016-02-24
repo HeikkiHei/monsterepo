@@ -1,8 +1,8 @@
 package fi.heikkihei.monster.creature;
 
-import java.util.*;
-
 /**
+ * Luotava hahmo -olio.
+ *
  * @author HeikkiHei
  */
 public class Creature {
@@ -19,24 +19,16 @@ public class Creature {
     private int charisma;
     private int level;
 
-    public Creature() {
-    }
-
     /**
-     * @param name hahmon nimi.
-     * @param creatureClass hahmon luokka.
-     * @param race hahmon rotu.
+     * Parametritön konstruktori.
      */
-    public Creature(String name, String creatureClass, String race) {
-        this.name = name;
-        this.creatureClass = creatureClass;
-        this.race = race;
-        this.weapon = "none";
+    public Creature() {
         this.level = 0;
     }
-//<editor-fold defaultstate="collapsed" desc="Getters and Setters">
 
     /**
+     * Asetetaan hahmon voima.
+     *
      * @param strength rajoitetaan 1-20.
      */
     public void setStrength(int strength) {
@@ -50,6 +42,8 @@ public class Creature {
     }
 
     /**
+     * Asetetaan hahmon tarkkuus.
+     *
      * @param dexterity rajoitetaan 1-20.
      */
     public void setDexterity(int dexterity) {
@@ -63,6 +57,8 @@ public class Creature {
     }
 
     /**
+     * Asetetaan hahmon ruumiinrakenne.
+     *
      * @param constitution rajoitetaan 1-20.
      */
     public void setConstitution(int constitution) {
@@ -76,6 +72,8 @@ public class Creature {
     }
 
     /**
+     * Asetetaan hahmon älykkyys.
+     *
      * @param intelligence rajoitetaan 1-20.
      */
     public void setIntelligence(int intelligence) {
@@ -89,6 +87,8 @@ public class Creature {
     }
 
     /**
+     * Asetetaan hahmon viisaus.
+     *
      * @param wisdom rajoitetaan 1-20.
      */
     public void setWisdom(int wisdom) {
@@ -102,6 +102,8 @@ public class Creature {
     }
 
     /**
+     * Asetaan hahmon karisma.
+     *
      * @param charisma rajoitetaan 1-20.
      */
     public void setCharisma(int charisma) {
@@ -115,7 +117,9 @@ public class Creature {
     }
 
     /**
-     * @param creatureClass asetetaan hahmolle luokka.
+     * Asetetaan hahmolle luokka.
+     *
+     * @param creatureClass String, jossa luokan tiedot.
      */
     public void setCreatureClass(String creatureClass) {
         if (creatureClass != null) {
@@ -128,7 +132,9 @@ public class Creature {
     }
 
     /**
-     * @param name asetetaan hahmolle nimi.
+     * Asetetaan hahmolle nimi.
+     *
+     * @param name String, jossa nimi.
      */
     public void setName(String name) {
         if (name != null) {
@@ -141,7 +147,9 @@ public class Creature {
     }
 
     /**
-     * @param weapon annetaan hahmolle ase.
+     * Asetetaan hahmolle ase.
+     *
+     * @param weapon String, jossa aseen tiedot.
      */
     public void setWeapon(String weapon) {
         if (weapon != null) {
@@ -154,7 +162,9 @@ public class Creature {
     }
 
     /**
-     * @param race asetetaan hahmolle rotu.
+     * Asetetaan hahmolle rotu.
+     *
+     * @param race String, jossa rodun tiedot.
      */
     public void setRace(String race) {
         if (race != null) {
@@ -174,23 +184,9 @@ public class Creature {
         return level;
     }
 
-//</editor-fold>
-    /**
-     * @return nimi, luokka, rotu.
-     */
     @Override
     public String toString() {
         return this.name
-                + "\n " + this.creatureClass
-                + "\n " + this.race
-                + "\n " + this.weapon
-                + "\n " + this.level
-                + "\n " + this.strength
-                + "\n " + this.dexterity
-                + "\n " + this.constitution
-                + "\n " + this.intelligence
-                + "\n " + this.wisdom
-                + "\n " + this.charisma;
+                + "\n " + this.creatureClass + "\n " + this.race + "\n " + this.weapon + "\n " + this.level + "\n " + this.strength + "\n " + this.dexterity + "\n " + this.constitution + "\n " + this.intelligence + "\n " + this.wisdom + "\n " + this.charisma;
     }
-
 }
