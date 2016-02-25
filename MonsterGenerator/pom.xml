@@ -22,12 +22,6 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>fi.heikkihei.monster</groupId>
-            <artifactId>MonsterGenerator</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <type>jar</type>
-        </dependency>
 
     </dependencies>
 
@@ -54,7 +48,6 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
-                <version>3.5.1</version>
             </plugin>
             
             <plugin>

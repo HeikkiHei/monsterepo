@@ -1,12 +1,12 @@
-Barbarian;A fierce warrior of primitive background who can enter a battle rage;12;Strength;Strength  & Constitution;Light and medium armor &  shields &  simple and martial weapons
-Bard;An inspiring magician whose power echoes the music of creation;8;Charisma;Dexterity  & Charisma;Light armor &  simple weapons &  hand crossbows &  longswords &  rapiers &  shortswords
-Cleric;A priestly champion who wields divine magic in service of a higher power;8;Wisdom;Wisdom  & Charisma;Light and medium armor &  shields &  simple weapons
-Druid;A priest of the Old Faith wielding the powers of nature— moonlight and plant growth  & fire and lightning—and adopting animal forms;8;Wisdom;Intelligence  & Wisdom;Light and medium armor(non-metal) &  shields(non-metal) &  clubs &  daggers &  darts &  Javelins &  Maces &  quarterstaffs &  scimitars &  sickles &  slings &  spears
-Fighter;A master of martial combat  & skilled with a variety of weapons and armor;10;Strength or Dexterity;Strength  & Constitution;All armor &  shields &  simple and martial weapons
-Monk;A master of martial arts &  skilled with fighting hands and martial monk weapons;8;Dexterity;Dexterity  & Strength (At lvl 14 monk proficiency in all);Simple weapons &  shortsword
-Paladin;A holy warrior bound to a sacred oath;10;Strength  or Charisma;Wisdom  & Charisma;All armor &  shields &  simple and martial weapons
-Ranger;A master of ranged combat &  one with nature.;10;Dexterity;Dexterity  & Strength;Light and medium armor &  shield &  Simple weapons &  martial weapons
-Rogue;A scoundrel who uses stealth and trickery to overcome obstacles and enemies;8;Dexterity;Dexterity  & Intelligence;Light armor &  simple weapons & hand crossbows &  longswords & rapiers &  shortswords
-Sorcerer;A spellcaster who draws on inherent magic from a gift or bloodline;6;Charisma;Constitution  & Charisma;Daggers &  darts &  slings &  quarterstaffs &  light crossbows
-Warlock;A wielder of magic that is derived from a bargain with an extraplanar entity;8;Charisma;Wisdom  & Charisma;Light armor &  simple weapons
-Wizard;A scholarly magic-user capable of manipulating the structures of reality;6;Intelligence;Intelligence  & Wisdom;Daggers &  darts &  slings &  quarterstaffs & light crossbows
+Barbarian,A fierce warrior of primitive background who can enter a battle rage ,12,Strength,Strength  & Constitution,Light and medium armor &  shields &  simple and martial weapons
+Bard,An inspiring magician whose power echoes the music of creation,8,Charisma,Dexterity  & Charisma,Light armor &  simple weapons &  hand crossbows &  longswords &  rapiers &  shortswords
+Cleric,A priestly champion who wields divine magic in service of a higher power,8,Wisdom,Wisdom  & Charisma,Light and medium armor &  shields &  simple weapons
+Druid,A priest of the Old Faith wielding the powers of natureï¾— moonlight and plant growth  & fire and lightningï¾—and adopting animal forms,8,Wisdom,Intelligence  & Wisdom,Light and medium armor(non-metal) &  shields(non-metal) &  clubs &  daggers &  darts &  Javelins &  Maces &  quarterstaffs &  scimitars &  sickles &  slings &  spears
+Fighter,A master of martial combat  & skilled with a variety of weapons and armor,10,Strength or Dexterity,Strength  & Constitution,All armor &  shields &  simple and martial weapons
+Monk,A master of martial arts &  skilled with fighting hands and martial monk weapons,8,Dexterity,Dexterity  & Strength (At lvl 14 monk proficiency in all),Simple weapons &  shortsword
+Paladin,A holy warrior bound to a sacred oath,10,Strength  or Charisma,Wisdom  & Charisma,All armor &  shields &  simple and martial weapons
+Ranger,A master of ranged combat &  one with nature.,10,Dexterity,Dexterity  & Strength,Light and medium armor &  shield &  Simple weapons &  martial weapons
+Rogue,A scoundrel who uses stealth and trickery to overcome obstacles and enemies,8,Dexterity,Dexterity  & Intelligence,Light armor &  simple weapons & hand crossbows &  longswords & rapiers &  shortswords
+Sorcerer,A spellcaster who draws on inherent magic from a gift or bloodline,6,Charisma,Constitution  & Charisma,Daggers &  darts &  slings &  quarterstaffs &  light crossbows
+Warlock,A wielder of magic that is derived from a bargain with an extraplanar entity,8,Charisma,Wisdom  & Charisma,Light armor &  simple weapons
+Wizard,A scholarly magic-user capable of manipulating the structures of reality,6,Intelligence,Intelligence  & Wisdom,Daggers &  darts &  slings &  quarterstaffs & light crossbows
