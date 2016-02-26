@@ -2,6 +2,7 @@ package fi.heikkihei.monster.userinterface;
 
 import fi.heikkihei.monster.creature.Creature;
 import fi.heikkihei.monster.generatestats.GenerateCreature;
+import fi.heikkihei.monster.userInterface.PrinterForGUI;
 import java.awt.event.*;
 import java.io.FileNotFoundException;
 import java.util.logging.Level;
@@ -21,6 +22,7 @@ public class ActionListenerForGUI implements ActionListener {
     private JRadioButton npcButton;
     private JRadioButton monsterButton;
     private GenerateCreature generateCreature;
+    private PrinterForGUI printer;
 
     /**
      * Konstruktori, jolla parametrina alla olevat.
@@ -54,17 +56,22 @@ public class ActionListenerForGUI implements ActionListener {
         if (ae.getSource() == this.generate) {
             if (this.npcButton.isSelected()) {
                 try {
-                    this.output.setText(this.generateCreature.create());
+                    this.generateCreature.create();
                 } catch (FileNotFoundException ex) {
                     Logger.getLogger(ActionListenerForGUI.class.getName()).log(Level.SEVERE, null, ex);
                 }
+                this.printer = new PrinterForGUI(this.generateCreature.getCreature());
+                this.output.setText(this.printer.printCreature());
+
             }
             if (this.monsterButton.isSelected()) {
                 try {
-                    this.output.setText(this.generateCreature.create());
+                    this.generateCreature.create();
                 } catch (FileNotFoundException ex) {
                     Logger.getLogger(ActionListenerForGUI.class.getName()).log(Level.SEVERE, null, ex);
                 }
+                this.printer = new PrinterForGUI(this.generateCreature.getCreature());
+                this.output.setText(this.printer.printCreature());
             }
         }
     }

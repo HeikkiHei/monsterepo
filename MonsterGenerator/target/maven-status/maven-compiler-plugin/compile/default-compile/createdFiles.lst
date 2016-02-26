@@ -7,4 +7,5 @@ fi/heikkihei/monster/randomizer/Randomizer.class
 fi/heikkihei/monster/userinterface/GraphicUserInterface.class
 fi/heikkihei/monster/randomizer/RandomRace.class
 fi/heikkihei/monster/main/Main.class
+fi/heikkihei/monster/userInterface/PrinterForGUI.class
 fi/heikkihei/monster/randomizer/RandomName.class

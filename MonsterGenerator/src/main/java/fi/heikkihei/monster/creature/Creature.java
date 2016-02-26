@@ -11,13 +11,13 @@ public class Creature {
     private String creatureClass;
     private String race;
     private String weapon;
+    private int level;
     private int strength;
     private int dexterity;
     private int constitution;
     private int intelligence;
     private int wisdom;
     private int charisma;
-    private int level;
 
     /**
      * Parametritön konstruktori.

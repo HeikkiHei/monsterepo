@@ -6,5 +6,6 @@
 /home/heikkiah/monster/MonsterGenerator/src/main/java/fi/heikkihei/monster/randomizer/RandomCreatureclass.java
 /home/heikkiah/monster/MonsterGenerator/src/main/java/fi/heikkihei/monster/randomizer/RandomName.java
 /home/heikkiah/monster/MonsterGenerator/src/main/java/fi/heikkihei/monster/userInterface/ActionListenerForGUI.java
+/home/heikkiah/monster/MonsterGenerator/src/main/java/fi/heikkihei/monster/userInterface/PrinterForGUI.java
 /home/heikkiah/monster/MonsterGenerator/src/main/java/fi/heikkihei/monster/randomizer/Randomizer.java
 /home/heikkiah/monster/MonsterGenerator/src/main/java/fi/heikkihei/monster/randomizer/RandomRace.java

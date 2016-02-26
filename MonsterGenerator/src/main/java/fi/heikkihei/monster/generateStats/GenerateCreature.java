@@ -40,7 +40,7 @@ public class GenerateCreature {
      *
      * @see fi.heikkihei.monster.randomizer.Randomizer
      */
-    public String create() throws FileNotFoundException {
+    public Creature create() throws FileNotFoundException {
         randomName();
         randomCreatureClass();
         randomRace();
@@ -52,7 +52,7 @@ public class GenerateCreature {
         randomWisdom();
         randomCharisma();
 
-        return this.creature.toString();
+        return this.creature;
     }
 
     /**
