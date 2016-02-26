@@ -18,7 +18,7 @@ public class RandomWeapon {
      *
      */
     public RandomWeapon() {
-        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/weapons.csv");
+        this.inputFile = new File("weapons.csv");
     }
 
     /**

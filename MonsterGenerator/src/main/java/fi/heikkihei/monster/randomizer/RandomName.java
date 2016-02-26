@@ -16,7 +16,7 @@ public class RandomName {
      *
      */
     public RandomName() {
-        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/malenames.csv"); 
+        this.inputFile = new File("malenames.csv"); 
     }
     /** Metodi jolla voidaan asettaa inputFile, lähinnä helpottamaan testien tekemistä.
      * 

@@ -18,7 +18,7 @@ public class RandomRace {
      *
      */
     public RandomRace() {
-        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/races.csv");
+        this.inputFile = new File("races.csv");
     }
 
     /**

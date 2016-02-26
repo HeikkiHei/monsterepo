@@ -16,7 +16,7 @@ public class RandomCreatureclass {
      *
      */
     public RandomCreatureclass() {
-        this.inputFile = new File("./src/main/java/fi/heikkihei/monster/datafiles/classes.csv");
+        this.inputFile = new File("classes.csv");
     }
     /** Metodi jolla voidaan asettaa inputFile, lähinnä helpottamaan testien tekemistä.
      * 
