@@ -44,7 +44,8 @@ public class ActionListenerForGUI implements ActionListener {
     /**
      * Kuunnellaan nappia Generate, lisätietoja radionapeista ja liuku'usta.
      * Luodaan uusi GenerateCreature, joka luo hahmon kuunneltujen nappien
-     * perusteella. Luotu hahmo palautetaan GUIn output-ikkunaan.
+     * perusteella. Hahmo viedään tulosteen tekevään luokkaan, jonka jälkeen 
+     * luotu hahmo palautetaan GUIn output-ikkunaan.
      *
      * @param ae kuunneltava event.
      *
@@ -59,8 +60,7 @@ public class ActionListenerForGUI implements ActionListener {
                 } catch (FileNotFoundException ex) {
                     Logger.getLogger(ActionListenerForGUI.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                this.printer = new PrinterForGUI(this.generateCreature.getCreature());
-                this.output.setText(this.printer.printCreature());
+                this.output.setText(new PrinterForGUI(this.generateCreature.getCreature()).printCreature());
 
             }
             if (this.monsterButton.isSelected()) {
@@ -69,8 +69,7 @@ public class ActionListenerForGUI implements ActionListener {
                 } catch (FileNotFoundException ex) {
                     Logger.getLogger(ActionListenerForGUI.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                this.printer = new PrinterForGUI(this.generateCreature.getCreature());
-                this.output.setText(this.printer.printCreature());
+                this.output.setText(new PrinterForGUI(this.generateCreature.getCreature()).printCreature());
             }
         }
     }

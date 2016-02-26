@@ -5,7 +5,7 @@ import fi.heikkihei.monster.creature.Creature;
 /**
  * Tulostin GUIn output-ruutua varten.
  *
- * @author heikkiah
+ * @author heikkiahprint
  */
 public class PrinterForGUI {
 
@@ -22,7 +22,7 @@ public class PrinterForGUI {
  * @return tuloste.
  */
     public String printCreature() {
-        return "NAME: " + this.creature.getName() + "\n"
+        return "NAME: \t" + this.creature.getName() + "\n"
                 + "CLASS: \t" + this.creature.getCreatureClass() + "\n"
                 + "RACE: \t" + this.creature.getRace() + "\n"
                 + "WEAPON: \t" + this.creature.getWeapon() + "\n"

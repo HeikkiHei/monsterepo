@@ -36,7 +36,7 @@ public class PrinterForGUITest {
     @Test
     public void printCreatureWorks() {
         this.testable = new PrinterForGUI(creature);
-        assertEquals("NAME: " + "name" + "\n"
+        assertEquals("NAME: \t" + "name" + "\n"
                 + "CLASS: \t" + "class" + "\n"
                 + "RACE: \t" + "race" + "\n"
                 + "WEAPON: \t" + "weapon" + "\n"

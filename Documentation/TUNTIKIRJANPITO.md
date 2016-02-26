@@ -13,6 +13,8 @@
 11.2.2016:	2h	JavaDoc   
 19.2.2016:	6h	Ohjelman kasaaminen toimivaksi kokonaisuudeksi, tekstikäyttöliittymän poisto.
 23.2.2016:	6h	Virheiden korjausta.      
-24.2.2016	4h	Sama jatkuu.   
+24.2.2016:	4h	Sama jatkuu.   
+25.2.2016:	4h	Säätöä ja hinkkausta.
+26.2.2016:	3h	Uusi luokka ja sen testit, dokumentaatiota.
   
-Yhteensä: 44h
+Yhteensä: 53h
