@@ -18,7 +18,7 @@ Ohjelma ei vaadi kirjautumista, joten käyttäjä on käyttäjä.
    
 **Luokkakaavio:**   
    
-![Kaavion paikka](Monster_luokkakaavio.png "http://yuml.me/edit/24d1871f") 
+![Kaavion paikka](Monster_luokkakaavio.png "http://yuml.me/edit/99a444bb") 
 
 
 **Sekvenssikaavio:**   
