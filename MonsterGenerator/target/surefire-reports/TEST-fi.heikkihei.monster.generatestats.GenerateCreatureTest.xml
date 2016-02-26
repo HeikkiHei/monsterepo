@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="12" failures="0" name="fi.heikkihei.monster.generatestats.GenerateCreatureTest" time="0.03" errors="0" skipped="0">
+<testsuite tests="12" failures="0" name="fi.heikkihei.monster.generatestats.GenerateCreatureTest" time="0.031" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="P:\Program Files\jdk1.8.0_60\jre\bin"/>
@@ -62,10 +62,10 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomIntWorks" time="0"/>
-  <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomRaceWorks" time="0.02"/>
+  <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomRaceWorks" time="0.015"/>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomDexWorks" time="0"/>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomChaWorks" time="0"/>
-  <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="createWorks" time="0"/>
+  <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="createWorks" time="0.016"/>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomStrWorks" time="0"/>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="constructorWorks" time="0"/>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomWeaponWorks" time="0"/>

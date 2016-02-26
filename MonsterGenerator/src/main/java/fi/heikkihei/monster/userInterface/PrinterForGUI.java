@@ -22,17 +22,17 @@ public class PrinterForGUI {
  * @return tuloste.
  */
     public String printCreature() {
-        return "NAME: \t" + this.creature.getName() + "\n"
-                + "CLASS: \t" + this.creature.getCreatureClass() + "\n"
-                + "RACE: \t" + this.creature.getRace() + "\n"
-                + "WEAPON: \t" + this.creature.getWeapon() + "\n"
-                + "LEVEL: \t" + this.creature.getLevel() + "\n \n"
-                + "STATISTICS: \n"
-                + "Strength: \t" + this.creature.getStrength() + "\n"
-                + "Dexterity: \t" + this.creature.getDexterity() + "\n"
-                + "Constitution: \t" + this.creature.getConstitution() + "\n"
-                + "Intelligence: \t" + this.creature.getIntelligence() + "\n"
-                + "Wisdom: \t" + this.creature.getWisdom() + "\n"
-                + "Charisma: \t" + this.creature.getCharisma();
+        return "NAME: \n" + this.creature.getName() + "\n \n"
+                + "CLASS: \n" + this.creature.getCreatureClass() + "\n \n"
+                + "RACE: \n" + this.creature.getRace() + "\n \n"
+                + "WEAPON: \n" + this.creature.getWeapon() + "\n \n"
+                + "LEVEL: \n" + this.creature.getLevel() + "\n \n"
+                + "STATISTICS: \n \n"
+                + "Strength: \n" + this.creature.getStrength() + "\n"
+                + "Dexterity: \n" + this.creature.getDexterity() + "\n"
+                + "Constitution: \n" + this.creature.getConstitution() + "\n"
+                + "Intelligence: \n" + this.creature.getIntelligence() + "\n"
+                + "Wisdom: \n" + this.creature.getWisdom() + "\n"
+                + "Charisma: \n" + this.creature.getCharisma();
     }
 }

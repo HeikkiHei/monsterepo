@@ -24,7 +24,7 @@ public class GraphicUserInterface implements Runnable {
     @Override
     public void run() {
         frame = new JFrame("MonsterGenerator");
-        frame.setPreferredSize(new Dimension(800, 800));
+        frame.setPreferredSize(new Dimension(600, 700));
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
@@ -73,7 +73,10 @@ public class GraphicUserInterface implements Runnable {
      */
     private JTextArea createPrintOutArea(Container container) {
         JTextArea printOut = new JTextArea();
-        printOut.setEnabled(false);
+        Font font = new Font("Verdana", Font.BOLD, 10);
+        printOut.setFont(font);
+        printOut.setLineWrap(true);
+        printOut.setEditable(false);
         container.add(printOut);
         return printOut;
     }
