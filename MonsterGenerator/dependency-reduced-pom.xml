@@ -28,6 +28,7 @@
             <param>fi.heikkihei.monster.creature.*</param>
             <param>fi.heikkihei.monster.generatestats.*</param>
             <param>fi.heikkihei.monster.randomizer.*</param>
+	    <param>fi.heikkihei.monster.userinterface.*</param>
           </targetClasses>
           <targetTests>
             <param>fi.heikkihei.monster.*</param>

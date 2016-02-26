@@ -1,4 +1,4 @@
-package fi.heikkihei.monster.userInterface;
+package fi.heikkihei.monster.userinterface;
 
 import fi.heikkihei.monster.creature.Creature;
 
@@ -10,11 +10,17 @@ import fi.heikkihei.monster.creature.Creature;
 public class PrinterForGUI {
 
     private Creature creature;
-
+/**
+ * Konstruktori, jolle annetaan hahmo.
+ * @param creature tulostettava hahmo.
+ */
     public PrinterForGUI(Creature creature) {
         this.creature = creature;
     }
-
+/**
+ * Tulostin, joka tulostaa GUIn output-ruutuun hahmon tiedot nätisti.
+ * @return tuloste.
+ */
     public String printCreature() {
         return "NAME: " + this.creature.getName() + "\n"
                 + "CLASS: \t" + this.creature.getCreatureClass() + "\n"
@@ -28,6 +34,5 @@ public class PrinterForGUI {
                 + "Intelligence: \t" + this.creature.getIntelligence() + "\n"
                 + "Wisdom: \t" + this.creature.getWisdom() + "\n"
                 + "Charisma: \t" + this.creature.getCharisma();
-
     }
 }

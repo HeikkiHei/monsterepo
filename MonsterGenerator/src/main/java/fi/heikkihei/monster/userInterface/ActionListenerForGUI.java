@@ -2,7 +2,6 @@ package fi.heikkihei.monster.userinterface;
 
 import fi.heikkihei.monster.creature.Creature;
 import fi.heikkihei.monster.generatestats.GenerateCreature;
-import fi.heikkihei.monster.userInterface.PrinterForGUI;
 import java.awt.event.*;
 import java.io.FileNotFoundException;
 import java.util.logging.Level;
