@@ -17,5 +17,6 @@ Näiden lisäksi luokassa itsessään on hahmon määritettyyn tasoon liittyviä metode
 Tiedonluontiluokat eivät luo random-tietoa, vaan hakevat satunnaista riviä niille annetusta tiedostosta ja antavat tämän rivin takaisin GenerateCreaturelle. Nämä luokat antavat hahmolle nimen, hahmoluokan, rodun ja aseen.   
 Näiden luokkien rivinluvun ja -haun tekee luokka Randomizer, jota kutsutaan luokkien metodeissa.   
 
-Kun kaikki tieto on haettu ja/tai luotu, GenerateCreature palauttaa luodun hahmon toStringin ja ActionListener syöttää sen graafisen käyttöliittymän tulostusruudulle.   
+Kun kaikki tieto on haettu ja/tai luotu, GenerateCreature lähettää hahmon PrinterForGUI-luokalle, joka luo nätin tulosteen.
+ActionListener syöttää sen graafisen käyttöliittymän tulostusruudulle.   
 
