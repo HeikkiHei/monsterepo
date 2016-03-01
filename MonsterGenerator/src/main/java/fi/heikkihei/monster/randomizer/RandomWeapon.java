@@ -17,7 +17,7 @@ public class RandomWeapon {
      *
      */
     public RandomWeapon() {
-        this.inputFile = new File("resources/weapons.csv");
+        this.inputFile = new File("./resources/weapons.csv");
     }
 
     /**

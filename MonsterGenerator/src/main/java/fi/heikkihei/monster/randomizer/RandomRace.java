@@ -17,7 +17,7 @@ public class RandomRace {
      *
      */
     public RandomRace() {
-        this.inputFile = new File("resources/races.csv");
+        this.inputFile = new File("./resources/races.csv");
     }
 
     /**

@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class RandomNameTest {
 
     private RandomName testable;
-    private File inputFile = new File("resources/test.csv"); 
+    private File inputFile = new File("./resources/test.csv"); 
     
     public RandomNameTest() {
     }
