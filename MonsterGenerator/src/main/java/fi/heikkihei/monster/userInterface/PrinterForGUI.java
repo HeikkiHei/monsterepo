@@ -10,17 +10,21 @@ import fi.heikkihei.monster.creature.Creature;
 public class PrinterForGUI {
 
     private Creature creature;
-/**
- * Konstruktori, jolle annetaan hahmo.
- * @param creature tulostettava hahmo.
- */
+
+    /**
+     * Konstruktori, jolle annetaan hahmo.
+     *
+     * @param creature tulostettava hahmo.
+     */
     public PrinterForGUI(Creature creature) {
         this.creature = creature;
     }
-/**
- * Tulostin, joka tulostaa GUIn output-ruutuun hahmon tiedot nätisti.
- * @return tuloste.
- */
+
+    /**
+     * Tulostin, joka tulostaa GUIn output-ruutuun NPC-hahmon tiedot nätisti.
+     *
+     * @return tulostettu NPC.
+     */
     public String printMonster() {
         return "RACE: \n" + this.creature.getRace() + "\n \n"
                 + "WEAPON: \n" + this.creature.getWeapon() + "\n \n"
@@ -33,8 +37,14 @@ public class PrinterForGUI {
                 + "Wisdom: \n" + this.creature.getWisdom() + "\n"
                 + "Charisma: \n" + this.creature.getCharisma();
     }
-    
-        public String printNPC() {
+
+    /**
+     * Tulostin, joka tulostaa GUIn output-ruutuun monster-hahmon tiedot
+     * nätisti.
+     *
+     * @return tulostettu monster.
+     */
+    public String printNPC() {
         return "NAME: \n" + this.creature.getName() + "\n \n"
                 + "CLASS: \n" + this.creature.getCreatureClass() + "\n \n"
                 + "RACE: \n" + this.creature.getRace() + "\n \n"

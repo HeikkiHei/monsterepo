@@ -21,7 +21,5 @@
 <file name="P:\NetBeansProjects\monsterepo\MonsterGenerator\src\main\java\fi\heikkihei\monster\userinterface\GraphicUserInterface.java">
 </file>
 <file name="P:\NetBeansProjects\monsterepo\MonsterGenerator\src\main\java\fi\heikkihei\monster\userinterface\PrinterForGUI.java">
-<error line="37" severity="error" message="method def modifier sisennyssyvyydellä 8 ei ole oikealla syvyydellä 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="37" column="9" severity="error" message="Javadoc-kommentti puuttuu." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
 </file>
 </checkstyle>
