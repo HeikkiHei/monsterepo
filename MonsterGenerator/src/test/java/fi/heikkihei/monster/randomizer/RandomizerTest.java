@@ -20,7 +20,7 @@ public class RandomizerTest {
     @Before
     public void setUp() {
         this.testable = new Randomizer();
-        this.inputFile = new File("./src/test/java/fi/heikkihei/monster/datafiles/test.csv");
+        this.inputFile = new File("resources/test.csv");
     }
 
     @Test

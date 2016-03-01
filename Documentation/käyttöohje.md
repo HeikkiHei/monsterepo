@@ -15,6 +15,7 @@
 4. Hahmon tiedot näkyvät alla.   
 
 **Huomioitavaa:**   
+   
 Kohdat 1. ja 2. voi suorittaa myös toisessa järjestyksessä, se ei vaikuta ohjelman toimintaan tai luotavaan hahmoon.  
    
 Kohdat 1. ja 2. voi jättää myös tekemättä, sillä ohjelmassa on valmiiksi valittuna tason 5 hirviö.   

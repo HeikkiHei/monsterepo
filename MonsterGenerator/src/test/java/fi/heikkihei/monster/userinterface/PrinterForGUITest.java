@@ -34,7 +34,7 @@ public class PrinterForGUITest {
     }
 
     @Test
-    public void printCreatureWorks() {
+    public void printNpcWorks() {
         this.testable = new PrinterForGUI(creature);
         assertEquals("NAME: \n" + "name" + "\n \n"
                 + "CLASS: \n" + "class" + "\n \n"
@@ -47,6 +47,21 @@ public class PrinterForGUITest {
                 + "Constitution: \n" + 1 + "\n"
                 + "Intelligence: \n" + 1 + "\n"
                 + "Wisdom: \n" + 1 + "\n"
-                + "Charisma: \n" + 1, testable.printCreature());
+                + "Charisma: \n" + 1, testable.printNPC());
+    }
+    
+        @Test
+    public void printMonsterWorks() {
+        this.testable = new PrinterForGUI(creature);
+        assertEquals("RACE: \n" + "race" + "\n \n"
+                + "WEAPON: \n" + "weapon" + "\n \n"
+                + "LEVEL: \n" + 5 + "\n \n"
+                + "STATISTICS: \n \n"
+                + "Strength: \n" + 1 + "\n"
+                + "Dexterity: \n" + 1 + "\n"
+                + "Constitution: \n" + 1 + "\n"
+                + "Intelligence: \n" + 1 + "\n"
+                + "Wisdom: \n" + 1 + "\n"
+                + "Charisma: \n" + 1, testable.printMonster());
     }
 }

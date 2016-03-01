@@ -15,7 +15,7 @@ public class RandomName {
      *
      */
     public RandomName() {
-        this.inputFile = new File("malenames.csv"); 
+        this.inputFile = new File("resources/malenames.csv"); 
     }
     /** Metodi jolla voidaan asettaa inputFile, lähinnä helpottamaan testien tekemistä.
      * 

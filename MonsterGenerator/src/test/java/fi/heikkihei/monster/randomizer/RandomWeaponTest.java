@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class RandomWeaponTest {
 
     private RandomWeapon testable;
-    private File inputFile = new File("./src/test/java/fi/heikkihei/monster/datafiles/test.csv"); 
+    private File inputFile = new File("resources/test.csv"); 
 
     public RandomWeaponTest() {
     }

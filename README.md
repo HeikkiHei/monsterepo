@@ -10,7 +10,7 @@ Ohjelma, joka satunnaisgeneroi hirviöitä ja NPC-hahmoja roolipeliä varten.
 
 [Käyttöohje](Documentation/käyttöohje.md)
    
-[To do](Documentation/todo.md)
+[To do](Documentation/todo.md)    
       
 [Tuntikirjanpito](Documentation/TUNTIKIRJANPITO.md)       
 

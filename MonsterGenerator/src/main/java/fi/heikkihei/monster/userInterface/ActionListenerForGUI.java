@@ -60,7 +60,7 @@ public class ActionListenerForGUI implements ActionListener {
                 } catch (FileNotFoundException ex) {
                     Logger.getLogger(ActionListenerForGUI.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                this.output.setText(new PrinterForGUI(this.generateCreature.getCreature()).printCreature());
+                this.output.setText(new PrinterForGUI(this.generateCreature.getCreature()).printNPC());
 
             }
             if (this.monsterButton.isSelected()) {
@@ -69,7 +69,7 @@ public class ActionListenerForGUI implements ActionListener {
                 } catch (FileNotFoundException ex) {
                     Logger.getLogger(ActionListenerForGUI.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                this.output.setText(new PrinterForGUI(this.generateCreature.getCreature()).printCreature());
+                this.output.setText(new PrinterForGUI(this.generateCreature.getCreature()).printMonster());
             }
         }
     }

@@ -26,6 +26,8 @@ public class GraphicUserInterface implements Runnable {
         frame = new JFrame("MonsterGenerator");
         frame.setPreferredSize(new Dimension(600, 700));
 
+        frame.getContentPane().setBackground(Color.LIGHT_GRAY);
+
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         createComponents(frame.getContentPane());
@@ -46,6 +48,8 @@ public class GraphicUserInterface implements Runnable {
         ButtonGroup askType = new ButtonGroup();
         JRadioButton npcButton = new JRadioButton("NPC");
         JRadioButton monsterButton = new JRadioButton("Monster");
+        npcButton.setBackground(Color.LIGHT_GRAY);
+        monsterButton.setBackground(Color.LIGHT_GRAY);
         monsterButton.setSelected(true);
 
         askType.add(npcButton);
@@ -75,6 +79,7 @@ public class GraphicUserInterface implements Runnable {
         JTextArea printOut = new JTextArea();
         Font font = new Font("Verdana", Font.BOLD, 10);
         printOut.setFont(font);
+        printOut.setBackground(Color.LIGHT_GRAY);
         printOut.setLineWrap(true);
         printOut.setEditable(false);
         container.add(printOut);
@@ -102,6 +107,7 @@ public class GraphicUserInterface implements Runnable {
         setLevel.setMajorTickSpacing(1);
         setLevel.setPaintLabels(true);
         setLevel.setPaintTicks(true);
+        setLevel.setBackground(Color.LIGHT_GRAY);
         container.add(setLevel);
         return setLevel;
     }

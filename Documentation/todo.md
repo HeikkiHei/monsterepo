@@ -5,7 +5,5 @@
 
 **TO DO:**   
 
-
-1. Graafisen käyttöliittymän hionta. 
-2. Tulosteen muokkaus, csv-rivien jako ja niihin selitteet.
-3. .JAR
+1. Tulosteen muokkaus:   
+	- csv-rivien jako ja niihin selitteet. Jäänee omaksi projektiksi kurssin jälkeen.
