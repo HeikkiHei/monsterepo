@@ -1,7 +1,6 @@
 package fi.heikkihei.monster.randomizer;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 
 /**
  * Luodaan hahmolle satunnainen nimi.
@@ -33,9 +32,8 @@ public class RandomName {
      * @see Randomizer#getRandomLineFromInputFile(java.io.File)
      *
      * @return satunnainen nimi, String.
-     * @throws java.io.FileNotFoundException jos tiedostoa ei löydy.
      */
-    public String returnRandomName() throws FileNotFoundException {
+    public String returnRandomName() {
         Randomizer randomizer = new Randomizer();
         return randomizer.getRandomLineFromInputFile(inputFile);
     }

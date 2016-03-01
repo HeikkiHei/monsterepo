@@ -1,7 +1,6 @@
 package fi.heikkihei.monster.randomizer;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 
 /**
  * Luodaan hahmolle satunnainen rotu.
@@ -38,9 +37,8 @@ public class RandomRace {
      * @see Randomizer#getRandomLineFromInputFile(java.io.File)
      *
      * @return satunnainen rotu, String.
-     * @throws java.io.FileNotFoundException jos tiedostoa ei löydy.
      */
-    public String returnRandomRace() throws FileNotFoundException {
+    public String returnRandomRace() {
         Randomizer randomizer = new Randomizer();
         return randomizer.getRandomLineFromInputFile(inputFile);
     }

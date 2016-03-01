@@ -62,15 +62,15 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomIntWorks" time="0"/>
-  <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomRaceWorks" time="0.015"/>
+  <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomRaceWorks" time="0"/>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomDexWorks" time="0"/>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomChaWorks" time="0"/>
-  <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="createWorks" time="0.016"/>
+  <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="createWorks" time="0"/>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomStrWorks" time="0"/>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="constructorWorks" time="0"/>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomWeaponWorks" time="0"/>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomWisWorks" time="0"/>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomConWorks" time="0"/>
-  <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomCreatureClassWorks" time="0"/>
+  <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomCreatureClassWorks" time="0.015"/>
   <testcase classname="fi.heikkihei.monster.generatestats.GenerateCreatureTest" name="randomNameWorks" time="0"/>
 </testsuite>

@@ -8,7 +8,7 @@ import fi.heikkihei.monster.userinterface.GraphicUserInterface;
  *
  * @author HeikkiHei
  * @version 0.9
- * @since 2016-02-24
+ * @since 2016-02-29
  */
 public class Main {
 

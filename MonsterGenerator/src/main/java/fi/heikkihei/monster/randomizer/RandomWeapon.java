@@ -1,7 +1,6 @@
 package fi.heikkihei.monster.randomizer;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 
 /**
  * Luodaan hahmolle satunnainen ase.
@@ -38,9 +37,8 @@ public class RandomWeapon {
      * @see Randomizer#getRandomLineFromInputFile(java.io.File)
      *
      * @return satunnainen ase, String.
-     * @throws java.io.FileNotFoundException jos tiedostoa ei löydy.
      */
-    public String returnRandomWeapon() throws FileNotFoundException {
+    public String returnRandomWeapon()  {
         Randomizer randomizer = new Randomizer();
         return randomizer.getRandomLineFromInputFile(inputFile);
     }

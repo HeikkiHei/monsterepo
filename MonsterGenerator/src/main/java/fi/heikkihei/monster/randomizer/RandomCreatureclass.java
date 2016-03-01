@@ -1,7 +1,6 @@
 package fi.heikkihei.monster.randomizer;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 
 /**
  * Luodaan hahmolle satunnainen hahmoluokka.
@@ -31,9 +30,8 @@ public class RandomCreatureclass {
      * @see Randomizer#getRandomLineFromInputFile(java.io.File)
      *
      * @return satunnainen luokka, String.
-     * @throws java.io.FileNotFoundException jos tiedostoa ei löydy.
      */
-    public String returnRandomClass() throws FileNotFoundException {
+    public String returnRandomClass() {
         Randomizer randomizer = new Randomizer();
         return randomizer.getRandomLineFromInputFile(inputFile);
     }

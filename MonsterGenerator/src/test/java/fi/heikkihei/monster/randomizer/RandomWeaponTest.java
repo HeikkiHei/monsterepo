@@ -1,7 +1,6 @@
 package fi.heikkihei.monster.randomizer;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -25,7 +24,7 @@ public class RandomWeaponTest {
     }
     
     @Test
-    public void randomWeaponWorks() throws FileNotFoundException {
+    public void randomWeaponWorks() {
         assertEquals("Testattava;Erotettu pilkulla;150;Edellinen kokeilee numeroa", testable.returnRandomWeapon());
     }
 
