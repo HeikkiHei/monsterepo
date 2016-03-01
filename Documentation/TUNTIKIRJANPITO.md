@@ -16,6 +16,6 @@
 25.2.2016:	4h	Säätöä ja hinkkausta.
 26.2.2016:	3h	Uusi luokka ja sen testit, dokumentaatiota.
 29.2.2016:	2h	Hiontaa.
-1.3.2016:	1h	Viimeistelyä. Jar.
+1.3.2016:	1h	Viimeistelyä. Jar.   
   
-Yhteensä: 53h
+Yhteensä: 56h

@@ -5,5 +5,5 @@
 
 **TO DO:**   
 
-1. Tulosteen muokkaus:   
-	- csv-rivien jako ja niihin selitteet. J‰‰nee omaksi projektiksi kurssin j‰lkeen.
+- Tulosteen muokkaus:    
+	- csv-rivien jako ja niihin selitteet. J‰‰ tarkoituksella omaksi projektiksi kurssin j‰lkeen.   
