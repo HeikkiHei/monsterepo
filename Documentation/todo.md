@@ -6,4 +6,7 @@
 **TO DO:**   
 
 - Tulosteen muokkaus:    
-	- csv-rivien jako ja niihin selitteet. J�� tarkoituksella omaksi projektiksi kurssin j�lkeen.   
+	- csv-rivien jako ja niihin selitteet. Jää tarkoituksella omaksi projektiksi kurssin jälkeen.   
+   
+- CSV-tiedostojen muokkaus:   
+	- Ilmeisesti devaus Windowsilla aiheutti sen, että tiedostot eivät aukea Linuxissa JAR:lla oikein. Selvitetään.
