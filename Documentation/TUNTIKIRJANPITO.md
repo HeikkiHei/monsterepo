@@ -3,7 +3,7 @@
 | **Päivämäärä:**  | **tunnit:**                               |                                                                                   | 
 |-----------------------------|--------------------------------|-----------------------------------------------------------------------------------| 
 |                             |                                |                                                                                   | 
-| 22.1.2016:    2h            | luokkakaavio, gitin luonti     |                                                                                   | 
+| 22.1.2016: |    2h                | luokkakaavio, gitin luonti                                                                                   | 
 | 26.1.2016:                  |   4h                           | koodausta, ensimmäiset luokat, tekstikäyttöliittymä                               | 
 | 27.1.2016:                  |   4h                           | koodausta, lähinnä testejä                                                        | 
 | 28.1.2016:                  |   5h                           | refaktorointia                                                                    | 
