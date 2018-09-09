@@ -1,14 +1,14 @@
 # monsterepo
-##Random monster generator
+## Random monster generator
    
-Ohjelma, joka satunnaisgeneroi hirviöitä ja NPC-hahmoja roolipeliä varten.   
+Ohjelma, joka satunnaisgeneroi hirviÃ¶itÃ¤ ja NPC-hahmoja roolipeliÃ¤ varten.   
    
-###Dokumentaatio
+### Dokumentaatio
 [Aihekuvaus](Documentation/aiheenKuvausJaRakenne.md)   
    
 [Rakennekuvaus](Documentation/rakennekuvaus.md)     
 
-[Käyttöohje](Documentation/käyttöohje.md)
+[KÃ¤yttÃ¶ohje](Documentation/kÃ¤yttÃ¶ohje.md)
    
 [To do](Documentation/todo.md)    
       
